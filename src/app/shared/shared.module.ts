@@ -1,26 +1,39 @@
 import { NgModule } from '@angular/core';
 
-import { ModalComponent, ModalDirectivesDirective } from './modal/modal.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { HeaderComponent } from './header/header.component';
-import { InputComponent } from './input/input.component';
-import { CalorieChartComponent } from './calorie-chart/calorie-chart.component';
-import { MacroChartComponent } from './macro-chart/macro-chart.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+
+import { CarouselComponent } from './carousel/carousel.component';
+import { CartOverviewComponent } from './cart-overview/cart-overview.component';
+import { FeaturedComponent } from './featured/featured.component';
+import { FooterComponent } from './footer/footer.component';
+import { GalleryProductComponent } from './gallery-product/gallery-product.component';
+import { HeaderComponent } from './header/header.component';
+import { HeaderBottomComponent } from './header-bottom/header-bottom.component';
+import { HeaderTopComponent } from './header-top/header-top.component';
+import { MailingListComponent } from './mailing-list/mailing-list.component';
+import { NavComponent } from './nav/nav.component';
+import { RatingComponent } from './rating/rating.component';
+import { SearchBoxComponent } from './search-box/search-box.component';
+import { SplashComponent } from './splash/splash.component';
 
 @NgModule({
   declarations: [
-    ModalComponent,
-    ModalDirectivesDirective,
-    DashboardComponent,
+    CarouselComponent,
+    CartOverviewComponent,
+    FeaturedComponent,
+    FooterComponent,
+    GalleryProductComponent,
     HeaderComponent,
-    InputComponent,
-    CalorieChartComponent,
-    MacroChartComponent
+    HeaderBottomComponent,
+    HeaderTopComponent,
+    MailingListComponent,
+    NavComponent,
+    RatingComponent,
+    SearchBoxComponent,
+    SplashComponent
   ],
   imports: [
     CommonModule,
@@ -30,13 +43,19 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     ChartsModule
   ],
   exports: [
-    ModalComponent,
-    ModalDirectivesDirective,
-    DashboardComponent,
+    CarouselComponent,
+    CartOverviewComponent,
+    FeaturedComponent,
+    FooterComponent,
+    GalleryProductComponent,
     HeaderComponent,
-    InputComponent,
-    CalorieChartComponent,
-    MacroChartComponent
+    HeaderBottomComponent,
+    HeaderTopComponent,
+    MailingListComponent,
+    NavComponent,
+    RatingComponent,
+    SearchBoxComponent,
+    SplashComponent
   ]
 })
-export class SharedModule {}
+export class SharedModule { }
