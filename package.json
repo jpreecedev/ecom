@@ -19,6 +19,7 @@
   "author": "Jon Preece",
   "private": true,
   "dependencies": {
+    "@angular/cli": "^1.0.0-beta.32.3",
     "@angular/common": "^2.4.4",
     "@angular/compiler": "^2.4.4",
     "@angular/compiler-cli": "^2.4.4",
@@ -40,7 +41,6 @@
     "@types/jsonwebtoken": "^7.1.31",
     "@types/node": "^6.0.48",
     "@types/node-uuid": "^0.0.28",
-    "angular-cli": "1.0.0-beta.26",
     "body-parser": "~1.13.2",
     "bootstrap": "^3.3.7",
     "chart.js": "^2.5.0",
