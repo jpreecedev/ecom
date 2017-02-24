@@ -1,0 +1,106 @@
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #999;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #000;
+  background-color: transparent;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+  float: left;
+  width: 80%;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+  color: #555;
+  background-color: #fff;
+}
+
+.navbar-header {
+  float: left;
+  width: 35%;
+  margin-top: 1em;
+}
+
+h1.navbar-brand {
+  text-transform: capitalize;
+  font-family: 'Corben';
+  font-size: 2.5em;
+}
+
+h1.navbar-brand a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar-nav>li>a {
+  padding-top: 21px;
+}
+
+.navbar-brand {
+  float: left;
+  font-size: 36px;
+  line-height: 22px;
+  padding: 0;
+}
+
+@media(max-width:991px) {
+  h1.navbar-brand {
+    font-size: 2em;
+  }
+  .navbar-header {
+    width: 26%;
+  }
+  .navbar {
+    width: 88%;
+  }
+}
+
+@media(max-width:640px) {
+  .navbar {
+    width: 80%;
+  }
+  .navbar-header {
+    width: 100%;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: #fff!important;
+  }
+  .nav>li {
+    position: relative;
+    display: block;
+  }
+  .navbar-collapse {
+    max-height: 800px;
+  }
+  .navbar-nav {
+    margin: 0;
+  }
+  .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}

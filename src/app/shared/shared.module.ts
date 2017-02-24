@@ -6,6 +6,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselItemComponent } from './carousel-item/carousel-item.component';
 import { CartOverviewComponent } from './cart-overview/cart-overview.component';
 import { FeaturedComponent } from './featured/featured.component';
 import { FooterComponent } from './footer/footer.component';
@@ -22,6 +23,7 @@ import { SplashComponent } from './splash/splash.component';
 @NgModule({
   declarations: [
     CarouselComponent,
+    CarouselItemComponent,
     CartOverviewComponent,
     FeaturedComponent,
     FooterComponent,
@@ -44,6 +46,7 @@ import { SplashComponent } from './splash/splash.component';
   ],
   exports: [
     CarouselComponent,
+    CarouselItemComponent,
     CartOverviewComponent,
     FeaturedComponent,
     FooterComponent,
