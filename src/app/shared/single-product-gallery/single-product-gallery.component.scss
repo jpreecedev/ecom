@@ -1,0 +1,21 @@
+.carousel {
+  margin-bottom: 40px;
+}
+
+.carousel-main {
+  width: 340px;
+  height: auto;
+}
+
+.carousel-main,
+.carousel-nav .carousel-cell {
+  border: 1px solid #D1CFCF;
+}
+
+.carousel-cell {
+  margin-right: 10px;
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
