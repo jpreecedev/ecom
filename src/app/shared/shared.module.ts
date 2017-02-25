@@ -22,6 +22,7 @@ import { SplashComponent } from './splash/splash.component';
 import { MapComponent } from './map/map.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { LoginFormComponent } from './login-form/login-form.component';
     SplashComponent,
     MapComponent,
     ContactFormComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    RegisterFormComponent
   ],
   imports: [
     CommonModule,
@@ -67,7 +69,8 @@ import { LoginFormComponent } from './login-form/login-form.component';
     SplashComponent,
     MapComponent,
     ContactFormComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    RegisterFormComponent
   ]
 })
 export class SharedModule { }
