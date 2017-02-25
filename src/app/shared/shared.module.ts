@@ -21,6 +21,7 @@ import { SearchBoxComponent } from './search-box/search-box.component';
 import { SplashComponent } from './splash/splash.component';
 import { MapComponent } from './map/map.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     SearchBoxComponent,
     SplashComponent,
     MapComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    LoginFormComponent
   ],
   imports: [
     CommonModule,
@@ -64,7 +66,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     SearchBoxComponent,
     SplashComponent,
     MapComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    LoginFormComponent
   ]
 })
 export class SharedModule { }

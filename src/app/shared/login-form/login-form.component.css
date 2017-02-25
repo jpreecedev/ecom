@@ -1,0 +1,38 @@
+form {
+  padding: 1em 0;
+}
+
+form div {
+  padding: 0 0 2em 0;
+}
+
+span {
+  color: #999;
+  font-size: 0.8125em;
+  padding-bottom: 0.2em;
+  display: block;
+  text-transform: uppercase;
+}
+
+input[type="text"] {
+  border: 1px solid #555;
+  outline-color: #08538C;
+  width: 96%;
+  font-size: 0.8125em;
+  padding: 0.5em;
+}
+
+input[type="submit"] {
+  border: 2px solid #000;
+  color: #000;
+  font-size: 1em;
+  padding: 0.7em 1.2em;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  display: inline-block;
+  text-transform: uppercase;
+  outline: none;
+  background-color: #fff;
+}
