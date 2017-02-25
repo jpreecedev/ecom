@@ -1,8 +1,12 @@
 import { RouterModule, Route } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
-const routes: Route[] = [];
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(
-  routes, { useHash: true }
-);
+const routes: Route[] = [
+  { path: '', component: HomeComponent },
+  { path: 'contact', component: ContactComponent }
+];
+
+export const routing: ModuleWithProviders = RouterModule.forRoot(routes);

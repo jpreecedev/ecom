@@ -1,0 +1,70 @@
+h5 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 10px 0;
+  color: #222;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 1em;
+  outline: none;
+  border: 1px solid #dcdee0;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 1em;
+  height: 10em;
+  resize: none;
+  outline: none;
+  border: 1px solid #dcdee0;
+}
+
+input[type="submit"] {
+  width: 20%;
+  font-size: 1em;
+  text-transform: uppercase;
+  background: #000;
+  border: none;
+  outline: none;
+  margin-top: 0.5em;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+input[type="submit"]:hover {
+  background: #eee;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .contact-left {
+    float: left;
+    width: 50%;
+  }
+  input[type="text"],
+  textarea {
+    padding: 5px 10px;
+  }
+  h5 {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 640px) {
+  input[type="submit"] {
+    width: 15%;
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 480px) {
+  input[type="submit"] {
+    width: 20%;
+  }
+}

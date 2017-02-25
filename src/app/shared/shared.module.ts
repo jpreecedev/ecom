@@ -19,6 +19,8 @@ import { NavComponent } from './nav/nav.component';
 import { RatingComponent } from './rating/rating.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
 import { SplashComponent } from './splash/splash.component';
+import { MapComponent } from './map/map.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { SplashComponent } from './splash/splash.component';
     NavComponent,
     RatingComponent,
     SearchBoxComponent,
-    SplashComponent
+    SplashComponent,
+    MapComponent,
+    ContactFormComponent
   ],
   imports: [
     CommonModule,
@@ -58,7 +62,9 @@ import { SplashComponent } from './splash/splash.component';
     NavComponent,
     RatingComponent,
     SearchBoxComponent,
-    SplashComponent
+    SplashComponent,
+    MapComponent,
+    ContactFormComponent
   ]
 })
 export class SharedModule { }
