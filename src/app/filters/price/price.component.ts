@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
     selector: 'app-price-filter',
     templateUrl: './price.component.html',
-    styleUrls: ['./price.component.css']
+    styleUrls: ['./price.component.scss']
 })
 export class PriceComponent {
 

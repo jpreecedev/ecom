@@ -12,7 +12,8 @@ const routes: Route[] = [
   { path: 'contact', component: ContactComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'products', component: ProductsComponent }
+  { path: 'products', component: ProductsComponent },
+  { path: '**', component: HomeComponent }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);

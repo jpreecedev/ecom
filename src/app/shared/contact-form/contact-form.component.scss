@@ -35,11 +35,10 @@ input[type="submit"] {
   color: #fff;
   font-weight: 500;
   padding: 10px 0;
-}
-
-input[type="submit"]:hover {
-  background: #eee;
-  color: #000;
+  &:hover {
+    background: #eee;
+    color: #000;
+  }
 }
 
 @media (max-width: 991px) {
@@ -47,8 +46,7 @@ input[type="submit"]:hover {
     float: left;
     width: 50%;
   }
-  input[type="text"],
-  textarea {
+  input[type="text"], textarea {
     padding: 5px 10px;
   }
   h5 {

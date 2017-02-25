@@ -1,4 +1,4 @@
-body a {
+body a, input[type="button"] {
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
@@ -6,30 +6,7 @@ body a {
   -ms-transition: 0.5s all;
 }
 
-input[type="button"] {
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  padding: 0 0;
-  margin: 0 0;
-}
-
-p {
-  padding: 0 0;
-  margin: 0 0;
-}
-
-ul {
+h1, h2, h3, h4, h5, h6, p, ul {
   padding: 0 0;
   margin: 0 0;
 }
@@ -37,7 +14,7 @@ ul {
 body {
   padding: 0 0;
   margin: 0 0;
-  font-family: 'Open Sans'
+  font-family: "Open Sans";
 }
 
 a.button {
@@ -48,14 +25,13 @@ a.button {
   color: #000;
   text-transform: uppercase;
   font-weight: 600;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
 }
 
-a.button:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-@media(max-width:991px) {
+@media (max-width: 991px) {
   a.button {
     font-size: 0.95em;
   }
@@ -87,26 +63,25 @@ a.button:hover {
   visibility: hidden;
   font-size: 1.1em;
   font-weight: 700;
-}
-
-.b-animate button {
-  padding: 10px;
-  color: #fff;
-  font-size: 0.8em;
-  cursor: pointer;
-  margin: 32% auto 0 auto;
-  display: block;
-  border: none;
-  width: 60%;
-  text-decoration: none;
-  background: rgba(25, 23, 23, 0.4);
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-  text-transform: uppercase;
-  font-size: 1em
+  button {
+    padding: 10px;
+    color: #fff;
+    font-size: 0.8em;
+    cursor: pointer;
+    margin: 32% auto 0 auto;
+    display: block;
+    border: none;
+    width: 60%;
+    text-decoration: none;
+    background: rgba(25, 23, 23, 0.4);
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
 }
 
 .glyphicon-zoom-in:before {
@@ -118,7 +93,6 @@ a.button:hover {
 .b-animate button:hover {
   background: rgba(25, 23, 23, 0.4);
 }
-
 
 /* lt-ie9 */
 
@@ -146,19 +120,17 @@ a.button:hover {
   font-weight: 300;
   overflow: hidden;
   width: 100%;
-}
-
-.b-link-stripe .b-wrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  text-align: center;
-  color: #ffffff;
-  overflow: hidden;
-}
-
-.b-link-stripe:hover .b-line {
-  opacity: 1;
+  .b-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+  }
+  &:hover .b-line {
+    opacity: 1;
+  }
 }

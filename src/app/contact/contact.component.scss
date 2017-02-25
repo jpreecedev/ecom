@@ -4,14 +4,13 @@ address {
 
 .contact {
   padding: 4em 0;
-}
-
-.contact h2 {
-  text-align: center;
-  font-size: 2.5em;
-  color: #000;
-  text-transform: capitalize;
-  font-weight: 600;
+  h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
 }
 
 .contact-left p {
@@ -21,7 +20,7 @@ address {
   line-height: 1.8em;
 }
 
-@media(max-width:1080px) {
+@media (max-width: 1080px) {
   .contact h2 {
     font-size: 2em;
   }
@@ -30,7 +29,7 @@ address {
   }
 }
 
-@media(max-width:991px) {
+@media (max-width: 991px) {
   .contact h2 {
     font-size: 1.6em;
   }
@@ -46,24 +45,20 @@ address {
   }
 }
 
-@media(max-width:640px) {
+@media (max-width: 640px) {
   .contact h2 {
     font-size: 1.5em;
   }
 }
 
-@media(max-width:480px) {
+@media (max-width: 480px) {
   .contact-left p {
     font-size: 0.92em;
   }
   .contact {
     padding: 2em 0px;
   }
-  .contact-left {
-    padding: 0;
-    width: 100%;
-  }
-  .contact-right {
+  .contact-left, .contact-right {
     padding: 0;
     width: 100%;
   }
