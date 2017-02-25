@@ -23,6 +23,7 @@ import { MapComponent } from './map/map.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
+import { RangeSliderComponent } from './range-slider/range-slider.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { RegisterFormComponent } from './register-form/register-form.component';
     MapComponent,
     ContactFormComponent,
     LoginFormComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    RangeSliderComponent
   ],
   imports: [
     CommonModule,
@@ -70,7 +72,8 @@ import { RegisterFormComponent } from './register-form/register-form.component';
     MapComponent,
     ContactFormComponent,
     LoginFormComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    RangeSliderComponent
   ]
 })
 export class SharedModule { }

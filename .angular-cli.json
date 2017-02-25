@@ -31,7 +31,7 @@
         "../node_modules/flickity/dist/flickity.pkgd.js"
       ],
       "environmentSource": "environments/environment.ts",
-      "environments": {
+      "_environments": {
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }

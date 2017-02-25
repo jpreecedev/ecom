@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from '../shared/shared.module';
 
 import { BrandComponent } from './brand/brand.component';
 import { CategoriesComponent } from './categories/categories.component';
@@ -8,7 +9,8 @@ import { PriceComponent } from './price/price.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   declarations: [
     BrandComponent,
@@ -20,6 +22,7 @@ import { PriceComponent } from './price/price.component';
     BrandComponent,
     CategoriesComponent,
     DiscountsComponent,
-    PriceComponent]
+    PriceComponent
+  ]
 })
 export class FiltersModule { }
