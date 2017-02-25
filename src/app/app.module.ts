@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { routing } from './app.router';
 import { SharedModule } from './shared/shared.module';
+import { FiltersModule } from './filters/filters.module';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
@@ -24,6 +25,7 @@ import { ProductsComponent } from './products/products.component';
   imports: [
     BrowserModule,
     SharedModule,
+    FiltersModule,
     FormsModule,
     HttpModule,
     routing
