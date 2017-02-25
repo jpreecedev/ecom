@@ -1,15 +1,32 @@
-.carousel {
+.carousel-nav {
   margin-bottom: 40px;
+  .carousel-cell {
+    img {
+      opacity: 0.5;
+    }
+    &.is-selected {
+      img {
+        opacity: 1;
+      }
+    }
+  }
 }
 
-.carousel-main {
+.carousel-main .carousel-cell {
   width: 340px;
   height: auto;
 }
 
-.carousel-main,
-.carousel-nav .carousel-cell {
+.carousel-main {
   border: 1px solid #D1CFCF;
+  margin-bottom: 10px;
+}
+
+.carousel-nav .carousel-cell {
+  margin-right: 0;
+  img {
+    border: 1px solid #D1CFCF;
+  }
 }
 
 .carousel-cell {

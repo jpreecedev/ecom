@@ -11,15 +11,12 @@ export class SingleProductGalleryComponent implements OnInit {
     ngOnInit() {
         setTimeout(() => {
             new Flickity(document.querySelector('.carousel-main'), {
-                wrapAround: true,
-                pageDots: false,
-                prevNextButtons: false
+                prevNextButtons: false,
+                pageDots: false
             });
             new Flickity(document.querySelector('.carousel-nav'), {
-                wrapAround: true,
-                pageDots: false,
-                prevNextButtons: false,
-                asNavFor: '.carousel-main'
+                asNavFor: '.carousel-main',
+                pageDots: false
             });
         });
     }
