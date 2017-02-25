@@ -19,6 +19,11 @@
   font-weight: 600;
 }
 
+.carousel-cell {
+  display: block;
+  height: 310px;
+}
+
 @media(max-width:1366px) {
   .item-info {
     left: 125px;
