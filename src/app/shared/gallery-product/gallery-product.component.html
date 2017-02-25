@@ -1,20 +1,28 @@
-<div class="col-md-3 gallery-grid">
-  <a href="products.html"><img src="/assets/g1.png" class="img-responsive" alt="" />
+<div class="col-md-3 grid-item">
+  <a href="products.html" class="item"><img src="/assets/g1.png" class="img-responsive" alt="" />
     <div class="gallery-info">
       <div class="quick">
         <p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
       </div>
     </div>
   </a>
-  <div class="galy-info">
+  <div class="product-info">
     <p>Amour Women’s Amour...</p>
-    <div class="galry">
-      <div class="prices">
-        <h5 class="item_price">$95.00</h5>
+    <div class="row">
+      <div class="col-xs-6">
+        <app-rating></app-rating>
       </div>
-      <app-rating></app-rating>
-      <input type="text" class="item_quantity" value="1">
-      <input type="button" class="item_add items" value="+">
+      <div class="col-xs-6">
+        <p class="item_price">$95.00</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <input type="text" class="item_quantity" value="1">
+      </div>
+      <div class="col-xs-6">
+        <input type="button" class="item_add" value="+">
+      </div>
     </div>
   </div>
 </div>

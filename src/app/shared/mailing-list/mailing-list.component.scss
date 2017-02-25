@@ -15,16 +15,6 @@
   }
 }
 
-.subscribe1 {
-  float: left;
-  width: 40%;
-}
-
-.subscribe2 {
-  float: left;
-  width: 60%;
-}
-
 .subscribe form input {
   &[type="text"] {
     border: 1px solid #DCDADA;
@@ -73,13 +63,6 @@
 
 @media (max-width: 480px) {
   .subscribe {
-    margin-top: 1em;
-  }
-  .subscribe1 {
-    width: 100%;
-  }
-  .subscribe2 {
-    width: 100%;
     margin-top: 1em;
   }
   .subscribe {

@@ -1,14 +1,33 @@
+.item {
+  display: block;
+  position: relative;
+  &:hover div.gallery-info {
+    display: block;
+  }
+}
+
+.product-info {
+  >p {
+    font-size: 1em;
+    color: #000;
+    margin: 1em 0;
+    font-weight: 600;
+  }
+  .row {
+    margin: 7px -15px;
+  }
+}
+
 .gallery-info {
   position: absolute;
-  width: 94%;
-  top: 69.8%;
-  left: 8px;
+  width: 100%;
   display: none;
   background-color: rgba(25, 23, 23, 0.4);
+  bottom: 0;
   padding: .5em 0;
 }
 
-.gallery-grid {
+.grid-item {
   position: relative;
   padding: 0 0.5em 2em;
   a {
@@ -17,16 +36,12 @@
   img:hover {
     border: 1px solid rgba(25, 23, 23, 0.4);
   }
-  &:hover div.gallery-info {
-    display: block;
-  }
   img {
     border: 1px solid #eee;
   }
 }
 
 .quick {
-  margin-left: 1em;
   text-align: center;
   p {
     color: #fff;
@@ -34,42 +49,19 @@
   }
 }
 
-.galry {
-  margin-top: 1em;
-}
-
-.galy-info {
-  p {
-    font-size: 1em;
-    color: #000;
-    margin: 1em 0 0;
-    font-weight: 600;
-  }
-  h5 {
-    font-size: 1.5em;
-    color: #bdbdbd;
-  }
-}
-
-.prices {
-  float: right;
-}
-
-span.item_price {
+.item_price {
   color: #000;
   font-size: 1em;
   font-weight: 600;
-  margin: 10px 0 5px;
   display: block;
+  text-align: center;
 }
 
 .item_quantity {
-  margin: 1em 0;
   font-size: 0.85em;
   padding: 5px 10px;
   display: block;
-  width: 16%;
-  float: left;
+  width: 35px;
 }
 
 .item_add {
@@ -79,7 +71,6 @@ span.item_price {
   padding: 0.5em 2em;
   display: inline-block;
   border-radius: 5px;
-  margin: 1em 0;
   background: #000;
   border: none;
   outline: none;
@@ -89,72 +80,11 @@ span.item_price {
   }
 }
 
-@media (max-width: 1080px) {
-  .galy-info p {
-    font-size: 0.96em;
-  }
-  .item_quantity {
-    width: 19%;
-  }
-}
-
-@media (max-width: 991px) {
-  .gallery-grid {
-    float: left;
-    width: 25%;
-  }
-  .gallery-info {
-    width: 92%;
-    top: 58%;
-  }
-  .quick {
-    margin-left: 0.5em;
-  }
-  .galy-info {
-    p {
-      font-size: 0.94em;
-    }
-    h5 {
-      font-size: 1.3em;
-    }
-  }
-}
-
 @media (max-width: 640px) {
-  .gallery-grid {
-    float: left;
-    width: 50%;
-  }
-  .gallery-info {
-    width: 90.2%;
-    top: 70.7%;
-  }
-  span.item_price {
+  .item_price {
     margin: 6px 0 0px;
   }
   .item_quantity {
     width: 23%;
-  }
-}
-
-@media (max-width: 480px) {
-  .galy-info p {
-    font-size: 0.92em;
-  }
-}
-
-@media (max-width: 320px) {
-  .gallery-grid {
-    width: 100%;
-  }
-  .gallery-info {
-    width: 94%;
-    top: 69.8%;
-  }
-  .galy-info p {
-    font-size: 0.9em;
-  }
-  .item_quantity {
-    width: 16%;
   }
 }
