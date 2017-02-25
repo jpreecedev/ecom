@@ -21,15 +21,9 @@ input {
     font-size: 0.8125em;
     padding: 0.5em;
   }
-  &[type="submit"] {
-    border: 2px solid #000;
-    color: #000;
-    font-size: 1em;
-    padding: 0.7em 1.2em;
-    transition: 0.5s all;
-    display: inline-block;
-    text-transform: uppercase;
-    outline: none;
-    background-color: #fff;
-  }
+}
+
+.forgot {
+  display: block;
+  margin: 1em 0 0 0;
 }

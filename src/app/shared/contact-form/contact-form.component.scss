@@ -24,41 +24,12 @@ textarea {
   border: 1px solid #dcdee0;
 }
 
-input[type="submit"] {
-  width: 20%;
-  font-size: 1em;
-  text-transform: uppercase;
-  background: #000;
-  border: none;
-  outline: none;
-  margin-top: 0.5em;
-  color: #fff;
-  font-weight: 500;
-  padding: 10px 0;
-  &:hover {
-    background: #eee;
-    color: #000;
-  }
-}
-
 @media (max-width: 991px) {
-  input[type="text"], textarea {
+  input[type="text"],
+  textarea {
     padding: 5px 10px;
   }
   h5 {
     font-size: 0.95em;
-  }
-}
-
-@media (max-width: 640px) {
-  input[type="submit"] {
-    width: 15%;
-    font-size: 0.95em;
-  }
-}
-
-@media (max-width: 480px) {
-  input[type="submit"] {
-    width: 20%;
   }
 }

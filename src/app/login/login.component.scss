@@ -27,21 +27,6 @@
   line-height: 1.8em;
 }
 
-.acount-btn {
-  border: 2px solid #000;
-  color: #000;
-  font-size: 1em;
-  padding: 0.7em 1.2em;
-  transition: 0.5s all;
-  display: inline-block;
-  text-transform: uppercase;
-  &:hover {
-    background: #000;
-    text-decoration: none;
-    color: #fff;
-  }
-}
-
 @media (max-width: 991px) {
   .login-page {
     padding: 4em 0;
