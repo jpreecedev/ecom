@@ -8,10 +8,6 @@
   padding: 1.5em 0;
 }
 
-.item:hover div.item-info {
-  display: block;
-}
-
 .item-info h5 {
   font-size: 1.5em;
   text-transform: capitalize;
@@ -22,6 +18,10 @@
 .carousel-cell {
   display: block;
   height: 310px;
+}
+
+.carousel-cell:hover div.item-info {
+  display: block;
 }
 
 @media(max-width:1366px) {
