@@ -21,11 +21,18 @@
   a {
     color: #000;
   }
-  img:hover {
-    border: 1px solid rgba(25, 23, 23, 0.4);
-  }
   img {
+    margin: 0 auto;
     border: 1px solid #eee;
+    &:hover {
+      border: 1px solid rgba(25, 23, 23, 0.4);
+    }
+  }
+  .details {
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
   }
 }
 
