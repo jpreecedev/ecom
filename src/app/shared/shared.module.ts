@@ -25,6 +25,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { RangeSliderComponent } from './range-slider/range-slider.component';
 import { SingleProductGalleryComponent } from './single-product-gallery/single-product-gallery.component';
+import { CheckoutItemComponent } from './checkout-item/checkout-item.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { SingleProductGalleryComponent } from './single-product-gallery/single-p
     LoginFormComponent,
     RegisterFormComponent,
     RangeSliderComponent,
-    SingleProductGalleryComponent
+    SingleProductGalleryComponent,
+    CheckoutItemComponent
   ],
   imports: [
     CommonModule,
@@ -76,7 +78,8 @@ import { SingleProductGalleryComponent } from './single-product-gallery/single-p
     LoginFormComponent,
     RegisterFormComponent,
     RangeSliderComponent,
-    SingleProductGalleryComponent
+    SingleProductGalleryComponent,
+    CheckoutItemComponent
   ]
 })
 export class SharedModule { }

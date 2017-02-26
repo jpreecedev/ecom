@@ -4,12 +4,6 @@
 }
 
 .banner-grid {
-  h2 {
-    font-size: 2.5em;
-    text-transform: capitalize;
-    font-weight: 600;
-    color: #000;
-  }
   p {
     font-size: 1em;
     color: #777;
@@ -21,9 +15,6 @@
 
 @media (max-width: 1080px) {
   .banner-grid {
-    h2 {
-      font-size: 2em;
-    }
     p {
       font-size: 0.96em;
     }
@@ -35,27 +26,13 @@
     padding-top: 3em;
   }
   .banner-grid {
-    h2 {
-      font-size: 1.6em;
-    }
     float: left;
     width: 50%;
     margin-top: 10em;
   }
   .banner-grid {
-    h1 {
-      font-size: 1.8em;
-    }
     p {
       font-size: 0.94em;
-    }
-  }
-}
-
-@media (max-width: 640px) {
-  .banner-grid {
-    h1, h2 {
-      font-size: 1.5em;
     }
   }
 }
@@ -78,9 +55,6 @@
     padding-top: 0em;
   }
   .banner-grid {
-    h2 {
-      font-size: 1.3em;
-    }
     p {
       font-size: 0.9em;
     }

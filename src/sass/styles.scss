@@ -1,24 +1,46 @@
+@import './mixins';
 body a,
 input[type="button"] {
   transition: 0.5s all;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  padding: 0 0;
-  margin: 0 0;
+.header {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000;
+}
+
+h1 {
+  @extend .header;
+  @include font-size(2.2);
+}
+
+h2 {
+  @extend .header;
+  @include font-size(2);
+}
+
+h3 {
+  @extend .header;
+  @include font-size(1.8);
+}
+
+h4 {
+  @extend .header;
+  @include font-size(1.6);
+}
+
+h4 {
+  @extend .header;
+  @include font-size(1.4);
 }
 
 body {
-  padding: 0 0;
-  margin: 0 0;
   font-family: "Open Sans";
+}
+
+ul, li {
+  margin-left: 0;
 }
 
 .button {
@@ -34,6 +56,11 @@ body {
     background-color: #000;
     text-decoration: none;
     color: #fff;
+  }
+  &.small {
+    font-size: 0.8em;
+    padding: 0.5em;
+    display: inline-block;
   }
 }
 

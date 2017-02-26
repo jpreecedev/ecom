@@ -2,13 +2,6 @@
   padding: 4em 0;
 }
 
-h4 {
-  font-size: 1.1em;
-  text-transform: uppercase;
-  color: #000;
-  margin-bottom: 0.5em;
-}
-
 ul li {
   list-style: none;
   a {
@@ -66,12 +59,6 @@ ul li {
     &.icon5 {
       background-position: -110px 0px;
     }
-  }
-}
-
-@media (max-width: 1080px) {
-  .footer-grid h4 {
-    font-size: 1em;
   }
 }
 

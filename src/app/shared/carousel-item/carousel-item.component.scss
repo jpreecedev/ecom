@@ -6,12 +6,6 @@
   display: none;
   background-color: rgba(255, 255, 255, 0.54);
   padding: 1.5em 0;
-  h5 {
-    font-size: 1.5em;
-    text-transform: capitalize;
-    color: #000;
-    font-weight: 600;
-  }
 }
 
 .carousel-cell {
@@ -36,9 +30,6 @@
 
 @media (max-width: 1080px) {
   .item-info {
-    h5 {
-      font-size: 1.2em;
-    }
     left: 70px;
     padding: 1em 0;
     top: 38%;
@@ -49,9 +40,6 @@
   .item-info {
     left: 50px;
     top: 36%;
-    h5 {
-      font-size: 1em;
-    }
   }
 }
 

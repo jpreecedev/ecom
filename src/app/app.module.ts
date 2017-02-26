@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ListerComponent } from './lister/lister.component';
 import { ProductComponent } from './product/product.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProductComponent } from './product/product.component';
     LoginComponent,
     RegisterComponent,
     ListerComponent,
-    ProductComponent
+    ProductComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

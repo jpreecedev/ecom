@@ -2,15 +2,6 @@
   padding: 6em 0;
 }
 
-.register-top-grid h3,
-.register-bottom-grid h3 {
-  color: #394c53;
-  font-size: 1.2em;
-  padding-bottom: 15px;
-  margin: 0;
-  font-weight: 600;
-}
-
 .register-top-grid div,
 .register-bottom-grid div {
   width: 48%;
@@ -81,10 +72,6 @@ div.register-bottom-grid {
 }
 
 @media (max-width: 480px) {
-  .register-top-grid h3,
-  .register-bottom-grid h3 {
-    font-size: 1em;
-  }
   .register {
     padding: 2em 0;
   }
