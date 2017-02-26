@@ -29,7 +29,6 @@
   height: 35px;
   margin: 0;
   z-index: 10;
-  font-size: 13px;
   color: #000;
   padding-left: 1em;
   &::-webkit-input-placeholder, &:-moz-placeholder {
@@ -163,7 +162,6 @@
 @media (max-width: 640px) {
   .sb-search-input {
     width: 78%;
-    font-size: 12px;
   }
   .sb-search.sb-search-open, .no-js .sb-search {
     width: 31%;

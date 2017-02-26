@@ -15,7 +15,6 @@
       width: 41%;
     }
     a {
-      font-size: 1em;
       text-transform: uppercase;
       color: #999;
       text-decoration: none;
@@ -27,17 +26,8 @@
   float: right;
 }
 
-@media (max-width: 991px) {
-  .top-right ul li a {
-    font-size: 0.95em;
-  }
-}
-
 @media (max-width: 640px) {
   .top-right ul li {
-    a {
-      font-size: 0.95em;
-    }
     padding: 0.5em 1em;
   }
 }
@@ -45,9 +35,6 @@
 @media (max-width: 320px) {
   .top-right {
     ul li {
-      a {
-        font-size: 0.72em;
-      }
       padding: 0.5em 0.5em;
     }
   }

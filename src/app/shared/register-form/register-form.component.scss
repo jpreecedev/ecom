@@ -12,7 +12,6 @@
 .register-top-grid span,
 .register-bottom-grid span {
   color: #999;
-  font-size: 0.85em;
   padding-bottom: 0.2em;
   display: block;
   text-transform: uppercase;
@@ -23,14 +22,12 @@
   border: 1px solid #555;
   outline-color: #FD9F3E;
   width: 96%;
-  font-size: 1em;
   padding: 0.5em;
 }
 
 .news-letter {
   color: #555;
   font-weight: 600;
-  font-size: 0.85em;
   margin-bottom: 1em;
   display: block;
   text-transform: uppercase;
@@ -47,7 +44,6 @@
   form input[type="submit"] {
     border: 2px solid #000;
     color: #000;
-    font-size: 1.2em;
     padding: 0.6em 2em;
     transition: 0.5s all;
     display: inline-block;
@@ -78,9 +74,6 @@ div.register-bottom-grid {
 }
 
 @media (max-width: 480px) {
-  .register-but form input[type="submit"] {
-    font-size: 0.9em;
-  }
   .register-top-grid div,
   .register-bottom-grid div {
     width: 100%;

@@ -38,7 +38,6 @@
 }
 
 h1.navbar-brand {
-  font-size: 2.5em;
   a {
     text-decoration: none;
     color: #000;
@@ -51,15 +50,11 @@ h1.navbar-brand {
 
 .navbar-brand {
   float: left;
-  font-size: 36px;
   line-height: 22px;
   padding: 0;
 }
 
 @media (max-width: 991px) {
-  h1.navbar-brand {
-    font-size: 2em;
-  }
   .navbar-header {
     width: 26%;
   }

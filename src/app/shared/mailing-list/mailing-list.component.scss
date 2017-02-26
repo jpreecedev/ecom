@@ -12,7 +12,6 @@
     border: 1px solid #DCDADA;
     outline: 0;
     width: 70%;
-    font-size: 1em;
     padding: 0.6em 1em;
     color: #7D7D7D;
   }
@@ -37,11 +36,6 @@
 @media (max-width: 480px) {
   .subscribe {
     margin-top: 1em;
-  }
-  .subscribe {
-    form input[type="submit"] {
-      font-size: 0.85em;
-    }
   }
 }
 

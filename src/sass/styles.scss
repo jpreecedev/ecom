@@ -1,13 +1,16 @@
 @import './mixins';
-body a,
-input[type="button"] {
-  transition: 0.5s all;
+
+html {
+  font-size: 100%;
 }
 
 .header {
   text-transform: uppercase;
   font-weight: 600;
   color: #000;
+  &.capitalize {
+    text-transform: capitalize;
+  }
 }
 
 h1 {
@@ -27,12 +30,12 @@ h3 {
 
 h4 {
   @extend .header;
-  @include font-size(1.6);
+  @include font-size(1);
 }
 
-h4 {
+h5 {
   @extend .header;
-  @include font-size(1.4);
+  @include font-size(0.8);
 }
 
 body {
@@ -41,6 +44,33 @@ body {
 
 ul, li {
   margin-left: 0;
+  padding-left: 0;
+}
+
+p, span, a, input, button, textarea {
+  @include font-size(0.8);
+  &.no-margin {
+    margin-bottom: 0;
+  }
+}
+
+.content {
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    @include font-size(1.2);
+  }
+  h3 {
+    @include font-size(1);
+  }
+}
+
+.bold {
+  font-weight: bold;
+  span {
+    font-weight: normal;
+  }
 }
 
 .button {
