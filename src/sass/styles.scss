@@ -1,5 +1,4 @@
 @import './mixins';
-
 html {
   font-size: 100%;
 }
@@ -42,12 +41,18 @@ body {
   font-family: "Open Sans";
 }
 
-ul, li {
+ul,
+li {
   margin-left: 0;
   padding-left: 0;
 }
 
-p, span, a, input, button, textarea {
+p,
+span,
+a,
+input,
+button,
+textarea {
   @include font-size(0.8);
   &.no-margin {
     margin-bottom: 0;
@@ -73,19 +78,22 @@ p, span, a, input, button, textarea {
   }
 }
 
-.button {
+.btn {
   font-size: 1em;
   text-decoration: none;
-  border: 2px solid #000;
   padding: 0.5em 4em;
   color: #000;
   text-transform: uppercase;
   font-weight: 600;
-  background-color: transparent;
+  border: 2px solid #000;
+  &:active,
+  &:visited {
+    color: #000;
+  }
   &:hover {
+    color: #fff;
     background-color: #000;
     text-decoration: none;
-    color: #fff;
   }
   &.small {
     font-size: 0.8em;
@@ -94,21 +102,41 @@ p, span, a, input, button, textarea {
   }
 }
 
+.btn-primary {
+  background-color: transparent;
+}
+
+.btn-secondary {
+  border: none;
+  background-color: #e5e5e5;
+  color: #000;
+  &:active,
+  &:visited {
+    background-color: #e5e5e5;
+  }
+  &:hover {
+    background-color: #555;
+  }
+}
+
 @media (max-width: 991px) {
-  .button {
+  .btn-primary,
+  .btn-secondary {
     font-size: 0.95em;
   }
 }
 
 @media (max-width: 480px) {
-  .button {
+  .btn-primary,
+  .btn-secondary {
     font-size: 0.92em;
     padding: 0.5em 2em;
   }
 }
 
 @media (max-width: 320px) {
-  .button {
+  .btn-primary,
+  .btn-secondary {
     font-size: 0.8em;
   }
 }
@@ -236,4 +264,11 @@ p, span, a, input, button, textarea {
 
 .no-top-margin {
   margin-top: 0!important;
+}
+
+input[type="number"] {
+  &.input-small {
+    max-width: 65px;
+    display: inline-block;
+  }
 }
