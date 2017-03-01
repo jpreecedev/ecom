@@ -5,31 +5,21 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { routing } from './app.router';
+
+import { AdminModule } from './admin/admin.module';
+import { PublicModule } from './public/public.module';
 import { SharedModule } from './shared/shared.module';
 import { FiltersModule } from './filters/filters.module';
-import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { ListerComponent } from './lister/lister.component';
-import { ProductComponent } from './product/product.component';
-import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    ContactComponent,
-    LoginComponent,
-    RegisterComponent,
-    ListerComponent,
-    ProductComponent,
-    CheckoutComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     SharedModule,
     FiltersModule,
+    AdminModule,
     FormsModule,
     HttpModule,
     routing
