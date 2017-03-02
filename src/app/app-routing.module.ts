@@ -5,12 +5,17 @@ import { NotFoundComponent } from './shared/not-found/not-found.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'shop',
     loadChildren: 'app/public/public.module#PublicModule'
   },
   {
     path: 'admin',
     loadChildren: 'app/admin/admin.module#AdminModule'
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'shop'
   },
   { path: '**', component: NotFoundComponent }
 ];

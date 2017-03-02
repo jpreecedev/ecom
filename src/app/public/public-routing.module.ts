@@ -12,11 +12,10 @@ import { CheckoutComponent } from './checkout/checkout.component';
 
 export const publicRoutes: Routes = [
   {
-    path: '',
+    path: 'shop',
     component: PublicComponent,
     children: [
-      { path: '', pathMatch: 'full', redirectTo: 'shop' },
-      { path: 'shop', component: HomeComponent },
+      { path: '', pathMatch: 'full', component: HomeComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
