@@ -26,6 +26,7 @@ import { RegisterFormComponent } from './register-form/register-form.component';
 import { RangeSliderComponent } from './range-slider/range-slider.component';
 import { SingleProductGalleryComponent } from './single-product-gallery/single-product-gallery.component';
 import { CheckoutItemComponent } from './checkout-item/checkout-item.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { CheckoutItemComponent } from './checkout-item/checkout-item.component';
     RegisterFormComponent,
     RangeSliderComponent,
     SingleProductGalleryComponent,
-    CheckoutItemComponent
+    CheckoutItemComponent,
+    NotFoundComponent
   ],
   imports: [
     CommonModule,

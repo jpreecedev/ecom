@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { routing } from './app.router';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AdminModule } from './admin/admin.module';
 import { PublicModule } from './public/public.module';
@@ -20,9 +20,10 @@ import { FiltersModule } from './filters/filters.module';
     SharedModule,
     FiltersModule,
     AdminModule,
+    PublicModule,
     FormsModule,
     HttpModule,
-    routing
+    AppRoutingModule
   ],
   bootstrap: [
     AppComponent

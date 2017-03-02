@@ -3,16 +3,19 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { HostComponent } from './host/host.component';
+import { AdminComponent } from './admin.component';
+
+import { AdminRoutingModule } from './admin-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    AdminRoutingModule
   ],
-  exports: [
-    HostComponent
-  ],
-  declarations: [DashboardComponent, HostComponent]
+  declarations: [
+    DashboardComponent,
+    AdminComponent
+  ]
 })
 export class AdminModule { }
