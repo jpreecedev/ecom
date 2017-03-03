@@ -6,5 +6,4 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recent-purchases.component.scss']
 })
 export class RecentPurchasesComponent {
-
 }
