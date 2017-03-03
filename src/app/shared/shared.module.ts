@@ -19,7 +19,6 @@ import { NavComponent } from './nav/nav.component';
 import { RatingComponent } from './rating/rating.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
 import { SplashComponent } from './splash/splash.component';
-import { MapComponent } from './map/map.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
@@ -44,7 +43,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
     RatingComponent,
     SearchBoxComponent,
     SplashComponent,
-    MapComponent,
     ContactFormComponent,
     LoginFormComponent,
     RegisterFormComponent,
@@ -75,7 +73,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
     RatingComponent,
     SearchBoxComponent,
     SplashComponent,
-    MapComponent,
     ContactFormComponent,
     LoginFormComponent,
     RegisterFormComponent,
