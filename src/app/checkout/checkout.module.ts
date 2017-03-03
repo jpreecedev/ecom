@@ -8,7 +8,7 @@ import { BillingAddressComponent } from './billing-address/billing-address.compo
 import { ShippingAddressComponent } from './shipping-address/shipping-address.component';
 import { ShippingMethodComponent } from './shipping-method/shipping-method.component';
 import { PaymentMethodComponent } from './payment-method/payment-method.component';
-import { OrderPreviewComponent } from './order-preview/order-preview.component';
+import { OrderReviewComponent } from './order-review/order-review.component';
 
 import { CheckoutRoutingModule } from './checkout-routing.module';
 
@@ -25,7 +25,7 @@ import { CheckoutRoutingModule } from './checkout-routing.module';
     ShippingAddressComponent,
     ShippingMethodComponent,
     PaymentMethodComponent,
-    OrderPreviewComponent
+    OrderReviewComponent
   ],
   exports: [
     CheckoutComponent,
@@ -34,7 +34,7 @@ import { CheckoutRoutingModule } from './checkout-routing.module';
     ShippingAddressComponent,
     ShippingMethodComponent,
     PaymentMethodComponent,
-    OrderPreviewComponent
+    OrderReviewComponent
   ]
 })
 export class CheckoutModule { }
