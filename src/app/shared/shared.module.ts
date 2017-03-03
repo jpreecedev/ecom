@@ -7,7 +7,6 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselItemComponent } from './carousel-item/carousel-item.component';
-import { CartOverviewComponent } from './cart-overview/cart-overview.component';
 import { FeaturedComponent } from './featured/featured.component';
 import { FooterComponent } from './footer/footer.component';
 import { GalleryProductComponent } from './gallery-product/gallery-product.component';
@@ -24,14 +23,12 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { RangeSliderComponent } from './range-slider/range-slider.component';
 import { SingleProductGalleryComponent } from './single-product-gallery/single-product-gallery.component';
-import { CheckoutItemComponent } from './checkout-item/checkout-item.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     CarouselComponent,
     CarouselItemComponent,
-    CartOverviewComponent,
     FeaturedComponent,
     FooterComponent,
     GalleryProductComponent,
@@ -48,7 +45,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
     RegisterFormComponent,
     RangeSliderComponent,
     SingleProductGalleryComponent,
-    CheckoutItemComponent,
     NotFoundComponent
   ],
   imports: [
@@ -61,7 +57,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
   exports: [
     CarouselComponent,
     CarouselItemComponent,
-    CartOverviewComponent,
     FeaturedComponent,
     FooterComponent,
     GalleryProductComponent,
@@ -77,8 +72,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     LoginFormComponent,
     RegisterFormComponent,
     RangeSliderComponent,
-    SingleProductGalleryComponent,
-    CheckoutItemComponent
+    SingleProductGalleryComponent
   ]
 })
 export class SharedModule { }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { FiltersModule } from '../filters/filters.module';
+import { CheckoutModule } from '../checkout/checkout.module';
 import { SharedModule } from '../shared/shared.module';
 
 import { PublicComponent } from './public.component';
@@ -12,7 +13,6 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ListerComponent } from './lister/lister.component';
 import { ProductComponent } from './product/product.component';
-import { CheckoutComponent } from './checkout/checkout.component';
 
 import { PublicRoutingModule } from './public-routing.module';
 
@@ -21,6 +21,7 @@ import { PublicRoutingModule } from './public-routing.module';
     CommonModule,
     FiltersModule,
     SharedModule,
+    CheckoutModule,
     RouterModule,
     PublicRoutingModule
   ],
@@ -31,7 +32,6 @@ import { PublicRoutingModule } from './public-routing.module';
     RegisterComponent,
     ListerComponent,
     ProductComponent,
-    CheckoutComponent,
     PublicComponent
   ]
 })

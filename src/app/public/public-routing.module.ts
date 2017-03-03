@@ -8,7 +8,6 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ListerComponent } from './lister/lister.component';
 import { ProductComponent } from './product/product.component';
-import { CheckoutComponent } from './checkout/checkout.component';
 
 export const publicRoutes: Routes = [
   {
@@ -21,7 +20,10 @@ export const publicRoutes: Routes = [
       { path: 'register', component: RegisterComponent },
       { path: 'lister', component: ListerComponent },
       { path: 'product', component: ProductComponent },
-      { path: 'checkout', component: CheckoutComponent }
+      {
+        path: 'checkout',
+        loadChildren: 'app/checkout/checkout.module#CheckoutModule'
+      }
     ]
   }
 ];
