@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  templateUrl: './public.component.html'
+  templateUrl: './public.component.html',
 })
 export class PublicComponent {
 
