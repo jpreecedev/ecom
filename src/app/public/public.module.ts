@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { FiltersModule } from '../filters/filters.module';
-import { CheckoutModule } from '../checkout/checkout.module';
 import { SharedModule } from '../shared/shared.module';
 
 import { PublicComponent } from './public.component';
@@ -21,7 +20,6 @@ import { PublicRoutingModule } from './public-routing.module';
     CommonModule,
     FiltersModule,
     SharedModule,
-    CheckoutModule,
     RouterModule,
     PublicRoutingModule
   ],

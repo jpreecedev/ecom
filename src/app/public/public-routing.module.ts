@@ -19,11 +19,7 @@ export const publicRoutes: Routes = [
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
       { path: 'lister', component: ListerComponent },
-      { path: 'product', component: ProductComponent },
-      {
-        path: 'checkout',
-        loadChildren: 'app/checkout/checkout.module#CheckoutModule'
-      }
+      { path: 'product', component: ProductComponent }
     ]
   }
 ];

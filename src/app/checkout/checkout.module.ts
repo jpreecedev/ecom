@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 
 import { CheckoutComponent } from './checkout.component';
@@ -16,6 +17,7 @@ import { CheckoutRoutingModule } from './checkout-routing.module';
   imports: [
     CommonModule,
     SharedModule,
+    RouterModule,
     CheckoutRoutingModule
   ],
   declarations: [
