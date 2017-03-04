@@ -9,14 +9,10 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselItemComponent } from './carousel-item/carousel-item.component';
 import { FeaturedComponent } from './featured/featured.component';
 import { FooterComponent } from './footer/footer.component';
-import { GalleryProductComponent } from './gallery-product/gallery-product.component';
 import { HeaderComponent } from './header/header.component';
-import { HeaderBottomComponent } from './header-bottom/header-bottom.component';
 import { HeaderTopComponent } from './header-top/header-top.component';
 import { NavComponent } from './nav/nav.component';
-import { RatingComponent } from './rating/rating.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
-import { SplashComponent } from './splash/splash.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
@@ -37,14 +33,10 @@ import { FilterPriceComponent } from './filter-price/filter-price.component';
     CarouselItemComponent,
     FeaturedComponent,
     FooterComponent,
-    GalleryProductComponent,
     HeaderComponent,
-    HeaderBottomComponent,
     HeaderTopComponent,
     NavComponent,
-    RatingComponent,
     SearchBoxComponent,
-    SplashComponent,
     ContactFormComponent,
     LoginFormComponent,
     RegisterFormComponent,
@@ -71,14 +63,10 @@ import { FilterPriceComponent } from './filter-price/filter-price.component';
     CarouselItemComponent,
     FeaturedComponent,
     FooterComponent,
-    GalleryProductComponent,
     HeaderComponent,
-    HeaderBottomComponent,
     HeaderTopComponent,
     NavComponent,
-    RatingComponent,
     SearchBoxComponent,
-    SplashComponent,
     ContactFormComponent,
     LoginFormComponent,
     RegisterFormComponent,
