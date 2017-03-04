@@ -12,7 +12,7 @@ export const accountRoutes: Routes = [
     path: 'account',
     component: AccountComponent,
     children: [
-      { path: '', pathMatch: 'full', redirectTo: 'login' },
+      { path: '', pathMatch: 'full', redirectTo: 'login-register' },
       { path: 'login-register', component: LoginRegisterComponent },
       { path: 'change-password', component: ChangePasswordComponent },
       { path: 'reset-password', component: ResetPasswordComponent },

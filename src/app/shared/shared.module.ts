@@ -23,6 +23,8 @@ import { RegisterFormComponent } from './register-form/register-form.component';
 import { RangeSliderComponent } from './range-slider/range-slider.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { OrderHistoryItemComponent } from './order-history-item/order-history-item.component';
+import { ResetPasswordFormComponent } from './reset-password-form/reset-password-form.component';
+import { OrderReviewItemComponent } from './order-review-item/order-review-item.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { OrderHistoryItemComponent } from './order-history-item/order-history-it
     RegisterFormComponent,
     RangeSliderComponent,
     NotFoundComponent,
-    OrderHistoryItemComponent
+    OrderHistoryItemComponent,
+    ResetPasswordFormComponent,
+    OrderReviewItemComponent
   ],
   imports: [
     CommonModule,
@@ -70,7 +74,9 @@ import { OrderHistoryItemComponent } from './order-history-item/order-history-it
     RegisterFormComponent,
     RangeSliderComponent,
     NotFoundComponent,
-    OrderHistoryItemComponent
+    OrderHistoryItemComponent,
+    ResetPasswordFormComponent,
+    OrderReviewItemComponent
   ]
 })
 export class SharedModule { }

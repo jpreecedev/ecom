@@ -11,7 +11,6 @@ import { PublicModule } from './public/public.module';
 import { AccountModule } from './account/account.module';
 import { CheckoutModule } from './checkout/checkout.module';
 import { SharedModule } from './shared/shared.module';
-import { FiltersModule } from './filters/filters.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { FiltersModule } from './filters/filters.module';
   imports: [
     BrowserModule,
     SharedModule,
-    FiltersModule,
     AdminModule,
     PublicModule,
     AccountModule,

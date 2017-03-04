@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { FiltersModule } from '../filters/filters.module';
 import { SharedModule } from '../shared/shared.module';
 
 import { PublicComponent } from './public.component';
@@ -18,7 +17,6 @@ import { BasketComponent } from './basket/basket.component';
 @NgModule({
   imports: [
     CommonModule,
-    FiltersModule,
     SharedModule,
     RouterModule,
     PublicRoutingModule
