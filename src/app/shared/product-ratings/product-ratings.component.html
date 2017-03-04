@@ -1,130 +1,127 @@
-<div class="tab-pane" id="ratings">
-  <div class="ratings-items">
+<div class="ratings-items">
 
-    <article class="rating-item">
-      <div class="row">
-        <div class="col-sm-9">
-          <h5>Shaped for crush</h5>
-          <p>I hope they release some more colours of this dress. It feels great and looks sexier.<br>
-            <br> I love it!</p>
-        </div>
-
-        <div class="col-sm-3">
-          <img src="assets/thumbnails/avatar.png" class="gravatar" alt="" />
-          <h6>Sam Ritora</h6>
-          <small>08/30/2013</small>
-          <div class="rating rating-5">
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-          </div>
-        </div>
-      </div>
-    </article>
-
-
-    <hr>
-  </div>
-
-  <div class="well">
+  <article class="rating-item">
     <div class="row">
-      <div class="col-sm-8">
-        <h6><i class="fa fa-comment-o"></i> &nbsp; Share your opinion!</h6>
-        <p>Let other people know your thoughts on this product!</p>
+      <div class="col-sm-9">
+        <h5>Shaped for crush</h5>
+        <p>I hope they release some more colours of this dress. It feels great and looks sexier.<br>
+          <br> I love it!</p>
       </div>
-      <div class="col-sm-4">
-        <button class="btn btn-seconary btn-block" data-toggle="modal" data-target="#review_form">Rate this product</button>
+
+      <div class="col-sm-3">
+        <img src="assets/thumbnails/avatar.png" class="gravatar" alt="" />
+        <h6>Sam Ritora</h6>
+        <small>08/30/2013</small>
+        <div class="rating rating-5">
+          <i class="fa fa-heart"></i>
+          <i class="fa fa-heart"></i>
+          <i class="fa fa-heart"></i>
+          <i class="fa fa-heart"></i>
+        </div>
       </div>
     </div>
+  </article>
+
+
+  <hr>
+</div>
+
+<div class="well">
+  <div class="row">
+    <div class="col-sm-8">
+      <h6><i class="fa fa-comment-o"></i> &nbsp; Share your opinion!</h6>
+      <p>Let other people know your thoughts on this product!</p>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-seconary btn-block" data-toggle="modal" data-target="#review_form">Rate this product</button>
+    </div>
   </div>
+</div>
 
-  <!-- Review modal window -->
-  <div id="review_form" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
+<!-- Review modal window -->
+<div id="review_form" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
 
-        <form onsubmit="return false;" enctype="multipart/form-data" action="#" method="post">
+      <form onsubmit="return false;" enctype="multipart/form-data" action="#" method="post">
 
-          <input type="hidden" name="ls_session_key" value="lsk52286509c22077.63404603" />
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <div class="hgroup title">
-              <h3>Modal header</h3>
-              <h5>Modal header</h5>
-            </div>
+        <input type="hidden" name="ls_session_key" value="lsk52286509c22077.63404603" />
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <div class="hgroup title">
+            <h3>Modal header</h3>
+            <h5>Modal header</h5>
           </div>
+        </div>
 
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label class="control-label">Rating</label>
-                  <div class="controls">
-                    <select class="form-control" name="rate">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="control-label">Rating</label>
+                <div class="controls">
+                  <select class="form-control" name="rate">
 		                                                                    <option value="1">1</option>
 		                                                                    <option value="2">2</option>
 		                                                                    <option value="3">3</option>
 		                                                                    <option value="4">4</option>
 		                                                                    <option value="5">5</option>
 		                                                                </select>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="review_title" class="control-label">Review title</label>
-                  <div class="controls">
-                    <input class="form-control" id="review_title" name="review_title" type="text" />
-                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="review_author_name" class="control-label">Your name</label>
-                  <div class="controls">
-                    <input class="form-control" id="review_author_name" name="review_author_name" type="text" value="" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="review_author_email" class="control-label">Your email</label>
-                  <div class="controls">
-                    <input class="form-control" id="review_author_email" name="review_author_email" type="text" value="" />
-                  </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="review_title" class="control-label">Review title</label>
+                <div class="controls">
+                  <input class="form-control" id="review_title" name="review_title" type="text" />
                 </div>
               </div>
             </div>
-
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="form-group">
-                  <label for="review_text" class="control-label">Review</label>
-                  <div class="controls">
-                    <textarea class="form-control" id="review_text" name="review_text"></textarea>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
           </div>
 
-          <div class="modal-footer">
-            <button class="btn btn-primary btn-block-xs pull-right" type="submit">Submit product review</button>
-          </div>
-        </form>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="review_author_name" class="control-label">Your name</label>
+                <div class="controls">
+                  <input class="form-control" id="review_author_name" name="review_author_name" type="text" value="" />
+                </div>
+              </div>
+            </div>
 
-      </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="review_author_email" class="control-label">Your email</label>
+                <div class="controls">
+                  <input class="form-control" id="review_author_email" name="review_author_email" type="text" value="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label for="review_text" class="control-label">Review</label>
+                <div class="controls">
+                  <textarea class="form-control" id="review_text" name="review_text"></textarea>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-primary btn-block-xs pull-right" type="submit">Submit product review</button>
+        </div>
+      </form>
+
     </div>
   </div>
-
-  <!-- End id="review_form" -->
-
 </div>
+
+<!-- End id="review_form" -->

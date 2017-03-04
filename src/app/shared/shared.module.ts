@@ -101,7 +101,12 @@ import { ProductRatingsComponent } from './product-ratings/product-ratings.compo
     CategoriesComponent,
     ProductComponent,
     FilterCategoryComponent,
-    FilterPriceComponent
+    FilterPriceComponent,
+    ProductOverviewComponent,
+    ProductInfoComponent,
+    ProductShippingComponent,
+    ProductReturnsComponent,
+    ProductRatingsComponent
   ]
 })
 export class SharedModule { }

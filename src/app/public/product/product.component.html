@@ -9,7 +9,8 @@
           <div class="product-images">
             <div class="box">
               <div class="primary">
-                <img src="assets/thumbnails/db_file_img_228_480xauto.jpg" data-zoom-image="assets/thumbnails/db_file_img_228_640xauto.jpg" alt="Chaser Overalls"/>
+                <img src="assets/thumbnails/db_file_img_228_480xauto.jpg" data-zoom-image="assets/thumbnails/db_file_img_228_640xauto.jpg"
+                  alt="Chaser Overalls" />
               </div>
 
               <div class="thumbs" id="gallery">
@@ -87,10 +88,21 @@
               </ul>
 
               <div class="tab-content">
-                <app-product-overview></app-product-overview>
-                <app-product-info></app-product-info>
-                <app-product-returns></app-product-returns>
-                <app-product-ratings></app-product-ratings>
+                <div class="tab-pane active" id="product">
+                  <app-product-overview></app-product-overview>
+                </div>
+                <div class="tab-pane" id="description">
+                  <app-product-info></app-product-info>
+                </div>
+                <div class="tab-pane" id="shipping">
+                  <app-product-shipping></app-product-shipping>
+                </div>
+                <div class="tab-pane" id="returns">
+                  <app-product-returns></app-product-returns>
+                </div>
+                <div class="tab-pane" id="ratings">
+                  <app-product-ratings></app-product-ratings>
+                </div>
               </div>
 
             </div>
