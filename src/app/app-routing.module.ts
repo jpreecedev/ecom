@@ -13,6 +13,10 @@ const routes: Routes = [
     loadChildren: 'app/account/account.module#AccountModule'
   },
   {
+    path: 'product',
+    loadChildren: 'app/product/product.module#ProductModule'
+  },
+  {
     path: 'admin',
     loadChildren: 'app/admin/admin.module#AdminModule'
   },
