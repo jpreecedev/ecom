@@ -9,6 +9,10 @@ const routes: Routes = [
     loadChildren: 'app/public/public.module#PublicModule'
   },
   {
+    path: 'account',
+    loadChildren: 'app/account/account.module#AccountModule'
+  },
+  {
     path: 'admin',
     loadChildren: 'app/admin/admin.module#AdminModule'
   },

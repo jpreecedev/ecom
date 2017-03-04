@@ -4,10 +4,10 @@ import { RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdminComponent } from './admin.component';
-
-import { AdminRoutingModule } from './admin-routing.module';
 import { TodoComponent } from './todo/todo.component';
 import { RecentPurchasesComponent } from './recent-purchases/recent-purchases.component';
+
+import { AdminRoutingModule } from './admin-routing.module';
 
 @NgModule({
   imports: [
