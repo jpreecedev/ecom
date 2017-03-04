@@ -28,6 +28,13 @@ import { OrderItemComponent } from './order-item/order-item.component';
 import { PromotionsComponent } from './promotions/promotions.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ProductComponent } from './product/product.component';
+import { FilterCategoryComponent } from './filter-category/filter-category.component';
+import { FilterPriceComponent } from './filter-price/filter-price.component';
+import { ProductOverviewComponent } from './product-overview/product-overview.component';
+import { ProductInfoComponent } from './product-info/product-info.component';
+import { ProductShippingComponent } from './product-shipping/product-shipping.component';
+import { ProductReturnsComponent } from './product-returns/product-returns.component';
+import { ProductRatingsComponent } from './product-ratings/product-ratings.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +60,14 @@ import { ProductComponent } from './product/product.component';
     OrderItemComponent,
     PromotionsComponent,
     CategoriesComponent,
-    ProductComponent
+    ProductComponent,
+    FilterCategoryComponent,
+    FilterPriceComponent,
+    ProductOverviewComponent,
+    ProductInfoComponent,
+    ProductShippingComponent,
+    ProductReturnsComponent,
+    ProductRatingsComponent
   ],
   imports: [
     CommonModule,
@@ -85,7 +99,9 @@ import { ProductComponent } from './product/product.component';
     OrderItemComponent,
     PromotionsComponent,
     CategoriesComponent,
-    ProductComponent
+    ProductComponent,
+    FilterCategoryComponent,
+    FilterPriceComponent
   ]
 })
 export class SharedModule { }
