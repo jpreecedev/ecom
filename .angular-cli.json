@@ -21,12 +21,13 @@
         "../node_modules/normalize.css/normalize.css",
         "../node_modules/font-awesome/css/font-awesome.css",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "scss/styles.scss"
+        "lib/tfingi-megamenu/tfingi-megamenu-frontend.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.slim.js",
         "../node_modules/bootstrap/dist/js/bootstrap.js",
-        "../node_modules/chart.js/dist/Chart.bundle.js"
+        "../node_modules/chart.js/dist/Chart.bundle.js",
+        "lib/tfingi-megamenu/tfingi-megamenu-frontend.js"
       ],
       "environmentSource": "environments/environment.ts",
       "_environments": {

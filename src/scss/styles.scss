@@ -1,12 +1,8 @@
-@import './_mixins';
-html {
-  font-size: 100%;
-}
+@import './colors';
+@import './mixins';
 
-.public {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-}
+@import './elements';
 
-.admin {
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+ul, ol {
+    padding: 0;
 }
