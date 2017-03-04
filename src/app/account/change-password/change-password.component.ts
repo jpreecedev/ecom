@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -8,4 +9,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ChangePasswordComponent {
 
+  constructor(titleService: Title) {
+    titleService.setTitle('Change Password');
+  }
 }

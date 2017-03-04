@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-login-register',
@@ -6,11 +7,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   templateUrl: './login-register.component.html',
   styleUrls: ['./login-register.component.scss']
 })
-export class LoginRegisterComponent implements OnInit {
+export class LoginRegisterComponent {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(titleService: Title) {
+    titleService.setTitle('Login / Register');
   }
 
 }

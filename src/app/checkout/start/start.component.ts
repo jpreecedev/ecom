@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-checkout-start',
@@ -7,5 +8,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./start.component.scss']
 })
 export class StartComponent {
-
+  constructor(titleService: Title) {
+    titleService.setTitle('Checkout');
+  }
 }

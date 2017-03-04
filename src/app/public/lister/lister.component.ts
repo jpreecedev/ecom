@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -7,5 +8,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ListerComponent {
 
+  constructor(titleService: Title) {
+    titleService.setTitle('Product lister');
+  }
 
 }

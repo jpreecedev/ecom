@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-basket',
@@ -8,5 +9,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class BasketComponent {
 
-
+  constructor(titleService: Title) {
+    titleService.setTitle('Basket');
+  }
 }

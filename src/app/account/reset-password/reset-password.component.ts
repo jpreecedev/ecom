@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-reset-password',
@@ -6,11 +7,9 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   templateUrl: './reset-password.component.html',
   styleUrls: ['./reset-password.component.scss']
 })
-export class ResetPasswordComponent implements OnInit {
+export class ResetPasswordComponent {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(titleService: Title) {
+    titleService.setTitle('Reset Password');
   }
-
 }

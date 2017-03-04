@@ -7,5 +7,5 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./todo.component.scss']
 })
 export class TodoComponent {
-
+  
 }

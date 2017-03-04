@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -6,5 +7,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent {
-
+  constructor(titleService: Title) {
+    titleService.setTitle('Product');
+  }
 }
