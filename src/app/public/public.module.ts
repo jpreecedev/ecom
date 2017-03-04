@@ -14,6 +14,7 @@ import { ListerComponent } from './lister/lister.component';
 import { ProductComponent } from './product/product.component';
 
 import { PublicRoutingModule } from './public-routing.module';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   imports: [
@@ -30,7 +31,8 @@ import { PublicRoutingModule } from './public-routing.module';
     RegisterComponent,
     ListerComponent,
     ProductComponent,
-    PublicComponent
+    PublicComponent,
+    AboutComponent
   ]
 })
 export class PublicModule { }
