@@ -6,12 +6,11 @@ import { SharedModule } from '../shared/shared.module';
 
 import { AccountComponent } from './account.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
 
 import { AccountRoutingModule } from './account-routing.module';
 import { OrderHistoryComponent } from './order-history/order-history.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { LoginRegisterComponent } from './login-register/login-register.component';
 
 @NgModule({
   imports: [
@@ -23,10 +22,9 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
   declarations: [
     AccountComponent,
     ChangePasswordComponent,
-    LoginComponent,
-    RegisterComponent,
     OrderHistoryComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    LoginRegisterComponent
   ]
 })
 export class AccountModule { }
