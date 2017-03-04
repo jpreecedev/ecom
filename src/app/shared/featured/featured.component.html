@@ -1,15 +1,25 @@
-<div class="gallery">
+<section class="featured">
   <div class="container">
-    <h2>Featured products</h2>
-    <div class="gallery-grids">
-      <app-gallery-product></app-gallery-product>
-      <app-gallery-product></app-gallery-product>
-      <app-gallery-product></app-gallery-product>
-      <app-gallery-product></app-gallery-product>
-      <app-gallery-product></app-gallery-product>
-      <app-gallery-product></app-gallery-product>
-      <app-gallery-product></app-gallery-product>
-      <app-gallery-product></app-gallery-product>
+
+    <div class="row">
+      <div class="col-sm-9">
+        <!-- Products list -->
+        <ul class="product-list isotope">
+          <app-product></app-product>
+          <app-product></app-product>
+          <app-product></app-product>
+          <app-product></app-product>
+          <app-product></app-product>
+          <app-product></app-product>
+        </ul>
+        <!-- End class="product-list isotope" -->
+      </div>
+
+      <div class="col-sm-3">
+        <app-categories></app-categories>
+      </div>
+      <!-- End class="widget Text" -->
+
     </div>
   </div>
-</div>
+</section>

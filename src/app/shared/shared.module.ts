@@ -24,7 +24,10 @@ import { RangeSliderComponent } from './range-slider/range-slider.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { OrderHistoryItemComponent } from './order-history-item/order-history-item.component';
 import { ResetPasswordFormComponent } from './reset-password-form/reset-password-form.component';
-import { OrderReviewItemComponent } from './order-review-item/order-review-item.component';
+import { OrderItemComponent } from './order-item/order-item.component';
+import { PromotionsComponent } from './promotions/promotions.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,10 @@ import { OrderReviewItemComponent } from './order-review-item/order-review-item.
     NotFoundComponent,
     OrderHistoryItemComponent,
     ResetPasswordFormComponent,
-    OrderReviewItemComponent
+    OrderItemComponent,
+    PromotionsComponent,
+    CategoriesComponent,
+    ProductComponent
   ],
   imports: [
     CommonModule,
@@ -76,7 +82,10 @@ import { OrderReviewItemComponent } from './order-review-item/order-review-item.
     NotFoundComponent,
     OrderHistoryItemComponent,
     ResetPasswordFormComponent,
-    OrderReviewItemComponent
+    OrderItemComponent,
+    PromotionsComponent,
+    CategoriesComponent,
+    ProductComponent
   ]
 })
 export class SharedModule { }
