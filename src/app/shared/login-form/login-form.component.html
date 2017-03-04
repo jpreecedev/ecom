@@ -1,12 +1,38 @@
-<form>
-  <div>
-    <span>Email Address<label>*</label></span>
-    <input type="text">
+<form onsubmit="return false;" enctype="multipart/form-data" action="#" method="post">
+
+  <div class="hgroup title">
+    <h3>Customer login</h3>
+    <h5>Please login using your existing account</h5>
   </div>
-  <div>
-    <span>Password<label>*</label></span>
-    <input type="text">
+
+  <div class="box-content">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label" for="login_email">Email</label>
+          <div class="controls">
+            <input class="form-control" id="login_email" type="text" name="email" value="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label" for="login_password">Password</label>
+          <div class="controls">
+            <input class="form-control" id="login_password" type="password" name="password" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <input type="submit" class="btn btn-primary" value="Login">
-  <a class="forgot" href="#">Forgot Your Password?</a>
+
+  <div class="buttons">
+    <button type="submit" class="btn btn-primary btn-sm btn-block-xs" name="login" value="Login">
+        Login
+    </button>
+    <a href="reset-password.html" class="btn btn-sm btn-block-xs">
+        Reset my password
+    </a>
+  </div>
 </form>

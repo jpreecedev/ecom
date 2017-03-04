@@ -1,38 +1,71 @@
-<div class="register">
-  <form>
-    <div class="register-top-grid">
-      <h3>PERSONAL INFORMATION</h3>
-      <div class="wow fadeInLeft" data-wow-delay="0.4s">
-        <span>First Name<label>*</label></span>
-        <input type="text">
-      </div>
-      <div class="wow fadeInRight" data-wow-delay="0.4s">
-        <span>Last Name<label>*</label></span>
-        <input type="text">
-      </div>
-      <div class="wow fadeInRight" data-wow-delay="0.4s">
-        <span>Email Address<label>*</label></span>
-        <input type="text">
-      </div>
-      <a class="news-letter" href="#">
-        <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Sign Up for Newsletter</label>
-      </a>
+<form onsubmit="return false;" enctype="multipart/form-data" action="#" method="post">
+
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <div class="hgroup title">
+      <h3>Register now</h3>
+      <h5>Registered users get access to features such as order history and so much more!</h5>
     </div>
-    <div class="register-bottom-grid">
-      <h3>LOGIN INFORMATION</h3>
-      <div class="wow fadeInLeft" data-wow-delay="0.4s">
-        <span>Password<label>*</label></span>
-        <input type="text">
-      </div>
-      <div class="wow fadeInRight" data-wow-delay="0.4s">
-        <span>Confirm Password<label>*</label></span>
-        <input type="text">
-      </div>
-    </div>
-  </form>
-  <div class="register-but">
-    <form>
-      <input type="submit" value="submit">
-    </form>
   </div>
-</div>
+
+  <div class="modal-body">
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label" for="first_name">First name</label>
+          <div class="controls">
+            <input type="text" class="form-control" id="first_name" name="first_name" value="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label" for="last_name">Last name</label>
+          <div class="controls">
+            <input type="text" class="form-control" id="last_name" name="last_name" value="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label class="control-label" for="email">Email address</label>
+          <div class="controls">
+            <input type="text" class="form-control" id="email" name="email" value="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label" for="password">Password</label>
+          <div class="controls">
+            <input class="col-sm-12" type="password" id="password" name="password" autocomplete="off" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="control-label" for="password_confirm">Password confirm</label>
+          <div class="controls">
+            <input class="col-sm-12" type="password" id="password_confirm" name="password_confirm" autocomplete="off" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-primary btn-sm" name="signup" value="Register">
+        Register now &nbsp; <i class="fa fa-check"></i>
+    </button>
+  </div>
+
+</form>
