@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
 import { AccountRoutingModule } from './account-routing.module';
+import { OrderHistoryComponent } from './order-history/order-history.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 @NgModule({
   imports: [
@@ -22,7 +24,9 @@ import { AccountRoutingModule } from './account-routing.module';
     AccountComponent,
     ChangePasswordComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    OrderHistoryComponent,
+    ResetPasswordComponent
   ]
 })
 export class AccountModule { }

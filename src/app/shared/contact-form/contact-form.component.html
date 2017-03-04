@@ -1,9 +1,64 @@
-<form>
-  <h5>name</h5>
-  <input type="text">
-  <h5>email address</h5>
-  <input type="text">
-  <h5>message</h5>
-  <textarea></textarea>
-  <input class="btn btn-primary" type="submit" value="send">
+<form onsubmit="return false;" id="form" enctype="multipart/form-data" action="#" method="post">
+
+  <h3>Send us a message</h3>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="name" class="control-label">Name</label>
+        <div class="controls">
+          <input type="text" name="name" id="name" value="" class="form-control" />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="email" class="control-label">Email</label>
+        <div class="controls">
+          <input type="text" name="email" id="email" value="" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="subject" class="control-label">Subject</label>
+        <div class="controls">
+          <input type="text" name="subject" id="subject" value="" class="form-control" />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="order_no" class="control-label">Order number</label>
+        <div class="controls">
+          <input type="text" name="order_no" id="order_no" value="" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="form-group">
+        <label for="message" class="control-label">Message</label>
+        <div class="controls">
+          <textarea name="message" id="message" class="form-control"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <button class="btn btn-primary btn-block-xs">
+           Send message <i class="fa fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
 </form>
