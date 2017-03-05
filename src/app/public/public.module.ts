@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
+import { effects, store, instrumentation } from './store';
+
 import { SharedModule } from '../shared/shared.module';
 import { ProductModule } from '../product/product.module';
 
@@ -20,7 +22,10 @@ import { BasketComponent } from './basket/basket.component';
     SharedModule,
     ProductModule,
     RouterModule,
-    PublicRoutingModule
+    PublicRoutingModule,
+    store,
+    effects,
+    instrumentation
   ],
   declarations: [
     HomeComponent,
