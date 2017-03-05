@@ -1328,7 +1328,7 @@ ul.activity-list > li .timestamp {
   width: 60%;
   height: 100%;
   position: relative;
-  background-image: url('../assets/login-bg.jpg');
+  background-image: url('~/assets/login-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1526,7 +1526,7 @@ ul.activity-list > li .timestamp {
 .profile-header .profile-main {
   position: relative;
   padding: 20px;
-  background-image: url('../assets/profile-bg.png');
+  background-image: url('~/assets/profile-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
