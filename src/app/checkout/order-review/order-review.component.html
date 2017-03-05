@@ -1,42 +1,64 @@
-<div id="checkout-content">
-  <div class="box-header">
-    <h3>Order review</h3>
-    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-  </div>
+<div class="box-header">
+  <h3>Order review</h3>
+  <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+</div>
 
-  <div class="box-content">
-    <div class="cart-items">
-      <table class="styled-table">
-        <thead>
-          <tr>
-            <th class="col_product text-left">Product</th>
-            <th class="col_remove text-right">&nbsp;</th>
-            <th class="col_qty text-right">Qty</th>
-            <th class="col_single text-right">Single</th>
-            <th class="col_discount text-right">Discount</th>
-            <th class="col_total text-right">Total</th>
-          </tr>
-        </thead>
+<div class="box-content">
+  <div class="cart-items">
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th class="col_product text-left">Product</th>
+          <th class="col_remove text-right">&nbsp;</th>
+          <th class="col_qty text-right">Qty</th>
+          <th class="col_single text-right">Single</th>
+          <th class="col_discount text-right">Discount</th>
+          <th class="col_total text-right">Total</th>
+        </tr>
+      </thead>
 
-        <tbody>
-          <tr>
-            <app-order-item></app-order-item>
-          </tr>
-          <tr>
-            <app-order-item></app-order-item>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+      <tbody>
+        <tr>
+          <td data-title="Product" class="col_product text-left">
+            <div class="image visible-lg">
+              <a href="product.html">
+                <img src="assets/thumbnails/db_file_img_17_60xauto.jpg" alt="1300 in Grey">
+              </a>
+            </div>
 
-  <div class="box-footer">
-    <a routerLink="../payment-method" class="btn btn-sm pull-left">
-      <i class="fa fa-chevron-left"></i> &nbsp; Payment method
-    </a>
+            <h5>
+              <a href="product.html">1300 in Grey</a>
+            </h5>
 
-    <button type="submit" class="btn btn-primary pull-right">
-      Create order and pay &nbsp; <i class="fa fa-check"></i>
-    </button>
+            <ul class="options">
+              <li>Size: UK 9</li>
+              <li>Color: Gray</li>
+            </ul>
+          </td>
+
+          <td data-title="Remove" class="col_remove text-right">
+            <a href="#">
+              <i class="fa fa-trash fa-lg"></i>
+            </a>
+          </td>
+
+          <td data-title="Qty" class="col_qty text-right">
+            <input type="text" name="item_quantity[]" value="1" />
+          </td>
+
+          <td data-title="Single" class="col_single text-right">
+            <span class="single-price">£160.00</span>
+          </td>
+
+          <td data-title="Discount" class="col_discount text-right">
+            <span class="discount">£0.00</span>
+          </td>
+
+          <td data-title="Total" class="col_total text-right">
+            <span class="total-price">£160.00</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>

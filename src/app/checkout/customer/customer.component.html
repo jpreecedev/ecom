@@ -1,0 +1,81 @@
+<section class="checkout">
+
+
+  <div class="container">
+    <form enctype="multipart/form-data" action="shipping.html" method="post">
+
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="box">
+
+            <!-- Checkout progress -->
+            <div id="checkout-progress">
+              <ul class="nav nav-tabs">
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                  <a routerLink="./billing-address">
+                    <i class="fa fa-map-marker fa-lg"></i>
+                    <span>Billing address</span>
+                  </a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                  <a routerLink="./shipping-address">
+                    <i class="fa fa-envelope fa-lg"></i>
+                    <span>Shipping address</span>
+                  </a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                  <a routerLink="./shipping-method">
+                    <i class="fa fa-truck fa-lg"></i>
+                    <span>Shipping method</span>
+                  </a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                  <a routerLink="./order-review">
+                    <i class="fa fa-search fa-lg"></i>
+                    <span>Order review</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- End id="checkout-progress" -->
+
+            <!-- Checkout content -->
+            <div id="checkout-content">
+              <router-outlet></router-outlet>
+              <div class="box-footer">
+                <a href="cart.html" class="btn btn-sm pull-left">
+                  <i class="fa fa-chevron-left"></i> &nbsp; Back to cart
+                </a>
+
+                <button type="submit" class="btn btn-primary pull-right">
+                                    Shipping address &nbsp; <i class="fa fa-chevron-right"></i>
+                                </button>
+              </div>
+            </div>
+            <!-- End id="checkout-content" -->
+
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="box">
+            <!-- Order totals -->
+            <div id="checkout-totals">
+              <div class="hgroup title">
+                <h3>Order total</h3>
+                <h5>Shipping costs and taxes will be calculated during checkout</h5>
+              </div>
+              <ul class="price-list">
+                <li>Subtotal: <strong>£247.98</strong></li>
+                <li>Shipping: <strong>£0.00</strong></li>
+                <li>Tax: <strong>£0.00</strong></li>
+                <li class="important">Total: <strong>£247.98</strong></li>
+              </ul>
+            </div>
+            <!-- End id="checkout-totals" -->
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

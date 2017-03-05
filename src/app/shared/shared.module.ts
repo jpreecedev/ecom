@@ -20,7 +20,6 @@ import { RangeSliderComponent } from './range-slider/range-slider.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { OrderHistoryItemComponent } from './order-history-item/order-history-item.component';
 import { ResetPasswordFormComponent } from './reset-password-form/reset-password-form.component';
-import { OrderItemComponent } from './order-item/order-item.component';
 import { PromotionsComponent } from './promotions/promotions.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ProductComponent } from './product/product.component';
@@ -44,7 +43,6 @@ import { FilterPriceComponent } from './filter-price/filter-price.component';
     NotFoundComponent,
     OrderHistoryItemComponent,
     ResetPasswordFormComponent,
-    OrderItemComponent,
     PromotionsComponent,
     CategoriesComponent,
     ProductComponent,
@@ -74,7 +72,6 @@ import { FilterPriceComponent } from './filter-price/filter-price.component';
     NotFoundComponent,
     OrderHistoryItemComponent,
     ResetPasswordFormComponent,
-    OrderItemComponent,
     PromotionsComponent,
     CategoriesComponent,
     ProductComponent,
