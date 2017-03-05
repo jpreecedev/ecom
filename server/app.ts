@@ -5,8 +5,7 @@ import * as compression from 'compression';
 
 import { loginRouter } from './routes/login';
 import { protectedRouter } from './routes/protected';
-import { fitbitRouter } from './routes/fitbit';
-import mongoose = require('mongoose');
+import { categoriesRouter } from './routes/categories';
 
 import * as config from './config';
 
@@ -22,21 +21,6 @@ let dbOptions = {
     }
   }
 };
-
-let connectWithRetry = () => {
-  return mongoose.connect(mongodbUrl, dbOptions, (err) => {
-    if (err) {
-      console.error('Failed to connect to mongo on startup - retrying in 5 sec. -> ' + err);
-      setTimeout(connectWithRetry, 5000);
-    }
-  });
-};
-
-connectWithRetry();
-
-mongoose.connection.once('open', () => {
-  console.log('Connection with database succeeded.');
-});
 
 app.disable('x-powered-by');
 
@@ -58,7 +42,7 @@ app.use(urlencoded({ extended: true }));
 
 app.use('/api/secure', protectedRouter);
 app.use('/api/login', loginRouter);
-app.use('/api/fitbit', fitbitRouter);
+app.use('/api/categories', categoriesRouter);
 
 if (app.get('env') === 'production') {
   app.use(express.static(path.join(__dirname, '/../client')));

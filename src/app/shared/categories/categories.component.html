@@ -1,50 +1,11 @@
 <div class="widget Categories">
   <h3 class="widget-title widget-title ">Categories</h3>
   <ul>
-    <li>
-      <a href='category.html' class="title">Mens</a>
-
+    <li *ngFor="let parentCategory of categories">
+      <a href="{{parentCategory.url}}" class="title">{{parentCategory.name}}</a>
       <ul>
-        <li>
-          <a href='category.html' class="title">T-Shirts</a>
-        </li>
-        <li>
-          <a href='category.html' class="title">Jackets</a>
-        </li>
-        <li>
-          <a href='category.html' class="title">Jumpers</a>
-        </li>
-        <li>
-          <a href='category.html' class="title">Shoes</a>
-        </li>
-        <li>
-          <a href='category.html' class="title">Shirts</a>
-        </li>
-        <li>
-          <a href='category.html' class="title">Accessories</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href='category.html' class="title">Womens</a>
-      <ul>
-        <li>
-          <a href='category.html' class="title">Shoes</a>
-        </li>
-        <li>
-          <a href='category.html' class="title">Dresses</a>
-        </li>
-        <li>
-          <a href='category.html' class="title">Bags</a>
-        </li>
-        <li>
-          <a href='category.html' class="title">Trousers</a>
-        </li>
-        <li>
-          <a href='category.html' class="title">Tops</a>
-        </li>
-        <li>
-          <a href='category.html' class="title">Accessories</a>
+        <li *ngFor="let childCategory of parentCategory.categories">
+          <a href="{{childCategory.url}}" class="title">{{childCategory.name}}</a>
         </li>
       </ul>
     </li>
