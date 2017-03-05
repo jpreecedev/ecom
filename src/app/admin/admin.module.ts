@@ -8,6 +8,7 @@ import { TodoComponent } from './todo/todo.component';
 import { RecentPurchasesComponent } from './recent-purchases/recent-purchases.component';
 
 import { AdminRoutingModule } from './admin-routing.module';
+import { OverviewComponent } from './overview/overview.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { AdminRoutingModule } from './admin-routing.module';
     DashboardComponent,
     AdminComponent,
     TodoComponent,
-    RecentPurchasesComponent
+    RecentPurchasesComponent,
+    OverviewComponent
   ]
 })
 export class AdminModule { }
