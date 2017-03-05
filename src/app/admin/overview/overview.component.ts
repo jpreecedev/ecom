@@ -1,4 +1,7 @@
+import 'lib/klorofil';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+
+declare var $: any;
 
 @Component({
   selector: 'app-overview',
