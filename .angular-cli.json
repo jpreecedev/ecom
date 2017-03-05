@@ -26,11 +26,22 @@
         "lib/tfingi-megamenu/tfingi-megamenu-frontend.css"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.slim.js",
+        "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.js",
         "../node_modules/chart.js/dist/Chart.bundle.js",
         "../node_modules/flexslider/jquery.flexslider.js",
-        "lib/tfingi-megamenu/tfingi-megamenu-frontend.js"
+        "lib/html5shiv.js",
+        "lib/tfingi-megamenu/tfingi-megamenu-frontend.js",
+        "lib/imagesloaded.pkgd.min.js",
+        "lib/isotope.pkgd.min.js",
+        "lib/jquery-migrate-1.2.1.min.js",
+        "lib/jquery-ui-1.10.2.custom.js",
+        "lib/jquery.cookie.js",
+        "lib/jquery.easing.min.js",
+        "lib/jquery.elevatezoom.js",
+        "lib/jquery.sharrre-1.3.5.js",
+        "lib/la_boutique.js",
+        "lib/megamenu.js"
       ],
       "environmentSource": "environments/environment.ts",
       "_environments": {
