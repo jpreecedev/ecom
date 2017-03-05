@@ -22,7 +22,7 @@
         "../node_modules/font-awesome/css/font-awesome.css",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
         "../node_modules/flexslider/flexslider.css",
-        "scss/style.css",
+        "theme/laboutique.less",
         "lib/tfingi-megamenu/tfingi-megamenu-frontend.css"
       ],
       "scripts": [
