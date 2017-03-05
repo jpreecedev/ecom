@@ -1,4 +1,3 @@
-(function () {
   var boutique = {
     animate_nivo: function ($progress, speed) {
       $progress.find('span').animate({
@@ -328,5 +327,3 @@
 
     });
   });
-
-})();
