@@ -17,7 +17,6 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { RangeSliderComponent } from './range-slider/range-slider.component';
-import { NotFoundComponent } from './not-found/not-found.component';
 import { OrderHistoryItemComponent } from './order-history-item/order-history-item.component';
 import { ResetPasswordFormComponent } from './reset-password-form/reset-password-form.component';
 import { PromotionsComponent } from './promotions/promotions.component';
@@ -40,7 +39,6 @@ import { FilterPriceComponent } from './filter-price/filter-price.component';
     LoginFormComponent,
     RegisterFormComponent,
     RangeSliderComponent,
-    NotFoundComponent,
     OrderHistoryItemComponent,
     ResetPasswordFormComponent,
     PromotionsComponent,
@@ -69,7 +67,6 @@ import { FilterPriceComponent } from './filter-price/filter-price.component';
     LoginFormComponent,
     RegisterFormComponent,
     RangeSliderComponent,
-    NotFoundComponent,
     OrderHistoryItemComponent,
     ResetPasswordFormComponent,
     PromotionsComponent,

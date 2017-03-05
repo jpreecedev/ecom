@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { NotFoundComponent } from './shared/not-found/not-found.component';
-
 const routes: Routes = [
   {
     path: '',
@@ -20,7 +18,10 @@ const routes: Routes = [
     path: 'admin',
     loadChildren: 'app/admin/admin.module#AdminModule'
   },
-  { path: '**', component: NotFoundComponent }
+  {
+    path: '**',
+    loadChildren: 'app/errors/errors.module#ErrorsModule'
+  }
 ];
 
 @NgModule({

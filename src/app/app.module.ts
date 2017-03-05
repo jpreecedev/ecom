@@ -11,6 +11,7 @@ import { PublicModule } from './public/public.module';
 import { AccountModule } from './account/account.module';
 import { CheckoutModule } from './checkout/checkout.module';
 import { SharedModule } from './shared/shared.module';
+import { ErrorsModule } from './errors/errors.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SharedModule } from './shared/shared.module';
     PublicModule,
     AccountModule,
     CheckoutModule,
+    ErrorsModule,
     FormsModule,
     HttpModule,
     AppRoutingModule
