@@ -19,7 +19,7 @@
   "author": "Jon Preece",
   "private": true,
   "dependencies": {
-    "@angular/cli": "^1.0.0-beta.32.3",
+    "@angular/cli": "^1.0.0-rc.1",
     "@angular/common": "^2.4.4",
     "@angular/compiler": "^2.4.4",
     "@angular/compiler-cli": "^2.4.4",

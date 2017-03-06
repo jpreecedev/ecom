@@ -19,6 +19,10 @@ const routes: Routes = [
     loadChildren: 'app/admin/admin.module#AdminModule'
   },
   {
+    path: 'ecom-admin',
+    loadChildren: 'app/ecom-login/ecom-login.module#EcomLoginModule'
+  },
+  {
     path: '**',
     loadChildren: 'app/errors/errors.module#ErrorsModule'
   }
