@@ -11,6 +11,7 @@ import { ReturnsComponent } from './returns/returns.component';
 import { ShippingComponent } from './shipping/shipping.component';
 
 import { ProductRoutingModule } from './product-routing.module';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { ProductRoutingModule } from './product-routing.module';
     OverviewComponent,
     ReturnsComponent,
     RatingsComponent,
-    ShippingComponent
+    ShippingComponent,
+    DetailComponent
   ],
   exports: [
     InfoComponent,
