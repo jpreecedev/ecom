@@ -14,7 +14,7 @@ export const publicRoutes: Routes = [
     component: PublicComponent,
     children: [
       { path: '', pathMatch: 'full', component: HomeComponent },
-      { path: 'lister', component: ListerComponent },
+      { path: 'l', component: ListerComponent },
       { path: 'basket', component: BasketComponent },
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent }
