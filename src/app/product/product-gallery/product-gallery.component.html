@@ -6,7 +6,7 @@
   <div class="thumbs" id="gallery" *ngIf="galleryData.items">
     <ul class="thumbs-list">
       <li *ngFor="let item of galleryData.items">
-        <a class="active" href="#" [attr.data-image]="item.imageUrlRegular" [title]="item.title" [attr.data-zoom-image]="item.imageUrlLarge">
+        <a class="active" [attr.data-image]="item.imageUrlRegular" [title]="item.title" [attr.data-zoom-image]="item.imageUrlLarge">
           <img [src]="item.imageUrlRegular" [alt]="item.alt" />
         </a>
       </li>

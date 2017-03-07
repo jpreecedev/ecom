@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { Component, AfterViewInit, ViewEncapsulation, Input } from '@angular/core';
 
 interface ProductGallery extends ProductGalleryInfo {
   items: ProductGalleryItem[];
@@ -19,8 +19,19 @@ interface ProductGalleryInfo {
   templateUrl: './product-gallery.component.html',
   styleUrls: ['./product-gallery.component.scss']
 })
-export class ProductGalleryComponent {
+export class ProductGalleryComponent implements AfterViewInit {
 
   @Input() galleryData: ProductGallery;
 
+  ngAfterViewInit() {
+    $('.product-images .primary img').elevateZoom({
+      zoomType: 'inner',
+      cursor: 'crosshair',
+      easing: true,
+      zoomWindowFadeIn: 300,
+      zoomWindowFadeOut: 300,
+      gallery: 'gallery',
+      galleryActiveClass: 'active'
+    });
+  }
 }
