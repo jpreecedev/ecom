@@ -11,17 +11,6 @@ import * as config from './config';
 
 const app: express.Application = express();
 
-let mongodbUrl = 'mongodb://' + config.DB_HOST + ':' + config.DB_PORT + '/' + config.DB_NAME;
-
-let dbOptions = {
-  server: {
-    reconnectTries: -1,
-    socketOptions: {
-      keepAlive: 120
-    }
-  }
-};
-
 app.disable('x-powered-by');
 
 app.use(function (req, res, next) {
