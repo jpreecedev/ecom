@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 
-import { CategoriesService } from './categories/categories.service';
 import { HttpService } from './services/http.service';
 import { JwtHelper } from './services/jwt-helper.service';
 
@@ -52,7 +51,6 @@ import { FilterPriceComponent } from './filter-price/filter-price.component';
     FilterPriceComponent
   ],
   providers: [
-    CategoriesService,
     HttpService,
     JwtHelper
   ],
