@@ -5,7 +5,7 @@ import * as compression from 'compression';
 
 import { loginRouter } from './routes/login';
 import { protectedRouter } from './routes/protected';
-import { categoriesRouter } from './routes/categories';
+import { productRouter } from './routes/product';
 
 import * as config from './config';
 
@@ -31,7 +31,7 @@ app.use(urlencoded({ extended: true }));
 
 app.use('/api/secure', protectedRouter);
 app.use('/api/login', loginRouter);
-app.use('/api/categories', categoriesRouter);
+app.use('/api/product', productRouter);
 
 if (app.get('env') === 'production') {
   app.use(express.static(path.join(__dirname, '/../client')));

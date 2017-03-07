@@ -3,8 +3,8 @@ import categories from '../data/categories';
 
 const router: Router = Router();
 
-router.get('/', (request: Request, response: Response) => {
+router.get('/:id/:description', (request: Request, response: Response) => {
     response.send(categories);
 });
 
-export { router as categoriesRouter }
+export { router as productRouter }

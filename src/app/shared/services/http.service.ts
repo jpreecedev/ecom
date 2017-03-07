@@ -7,17 +7,10 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import { AppSettings } from '../../app.settings';
 
-export interface PagedResponse<T> {
-  total: number;
-  data: T[];
-}
-
 @Injectable()
 export class HttpService {
 
-  constructor(private http: Http, private jwtHelper: JwtHelper) {
-
-  }
+  constructor(private http: Http) { }
 
   get(url: string): Observable<Response> {
     return this._request({ url: url, method: RequestMethod.Get, headers: this.getRequestHeaders(false) });
@@ -35,36 +28,10 @@ export class HttpService {
     return this._request({ url: url, body: body, method: RequestMethod.Delete, headers: this.getRequestHeaders(false) });
   }
 
-  authenticate(username: string, password: string, rememberMe: boolean): Observable<boolean> {
-    let creds: string = 'username=' + username + '&password=' + password + '&grant_type=password&client_id=099153c2625149bc8ecb3e85e03f0022';
-
-    return this._request({ url: `${AppSettings.API_ENDPOINT}/oauth2/token`, body: creds, method: RequestMethod.Post, headers: this.getRequestHeaders(true) })
-      .do((response: Response) => {
-        this.jwtHelper.setToken(response.json(), rememberMe);
-      })
-      .map((res: Response) => {
-        if (res.status === 200) {
-          return true;
-        }
-        return false;
-      });
-  }
-
   getRequestHeaders(isAuthenticating: boolean): Headers {
     let headers: Headers = new Headers();
     headers.append('Accept', 'application/json');
-
-    if (isAuthenticating) {
-      headers.append('Content-Type', 'application/x-www-form-urlencoded');
-    } else {
-      headers.append('Content-Type', 'application/json');
-
-      let token: IJwt = this.jwtHelper.getToken();
-      if (token && token.access_token) {
-        headers.append('Authorization', 'Bearer ' + token.access_token);
-      }
-    }
-
+    headers.append('Content-Type', 'application/json');
     return headers;
   }
 

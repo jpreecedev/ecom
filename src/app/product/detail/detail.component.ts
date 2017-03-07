@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
+import { ProductDetail } from './detail.service';
+
 @Component({
   encapsulation: ViewEncapsulation.None,
   templateUrl: './detail.component.html',
@@ -8,16 +10,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class DetailComponent implements OnInit {
 
-  public description: String;
-
-  constructor(public router: Router, route: ActivatedRoute) {
-    this.description = route.snapshot.params.description;
-  }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    if (!this.description) {
-      this.router.navigate(['../']);
-    }
+    this.route.data.subscribe((data: { productDetail: ProductDetail[] }) => {
+
+    });
   }
 
 }

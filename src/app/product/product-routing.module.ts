@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { DetailResolver } from './detail/detail-resolver.service';
 import { ProductComponent } from './product.component';
 import { DetailComponent } from './detail/detail.component';
 
@@ -10,8 +11,11 @@ export const productRoutes: Routes = [
     component: ProductComponent,
     children: [
       {
-        path: ':description',
-        component: DetailComponent
+        path: ':id/:description',
+        component: DetailComponent,
+        resolve: {
+          productDetail: DetailResolver
+        }
       },
       {
         path: '',

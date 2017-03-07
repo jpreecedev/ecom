@@ -10,6 +10,8 @@ import { RatingsComponent } from './ratings/ratings.component';
 import { ReturnsComponent } from './returns/returns.component';
 import { ShippingComponent } from './shipping/shipping.component';
 
+import { DetailResolver } from './detail/detail-resolver.service';
+import { DetailService } from './detail/detail.service';
 import { ProductRoutingModule } from './product-routing.module';
 import { DetailComponent } from './detail/detail.component';
 
@@ -27,6 +29,10 @@ import { DetailComponent } from './detail/detail.component';
     RatingsComponent,
     ShippingComponent,
     DetailComponent
+  ],
+  providers: [
+    DetailResolver,
+    DetailService
   ],
   exports: [
     InfoComponent,
