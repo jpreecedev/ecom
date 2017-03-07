@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-    selector: 'app-register-form',
     encapsulation: ViewEncapsulation.None,
+    selector: 'app-register-form',
     templateUrl: './register-form.component.html',
     styleUrls: ['./register-form.component.scss']
 })

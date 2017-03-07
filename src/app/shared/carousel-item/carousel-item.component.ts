@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-    selector: 'app-carousel-item',
     encapsulation: ViewEncapsulation.None,
+    selector: 'app-carousel-item',
     templateUrl: './carousel-item.component.html',
     styleUrls: ['./carousel-item.component.scss']
 })

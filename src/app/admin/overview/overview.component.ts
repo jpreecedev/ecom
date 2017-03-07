@@ -2,8 +2,8 @@ import 'lib/klorofil';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-overview',
   encapsulation: ViewEncapsulation.None,
+  selector: 'app-overview',
   templateUrl: './overview.component.html',
   styleUrls: ['./overview.component.scss']
 })
