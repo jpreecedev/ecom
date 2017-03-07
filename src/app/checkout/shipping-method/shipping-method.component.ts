@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-shipping-method',
   encapsulation: ViewEncapsulation.None,
+  selector: 'app-shipping-method',
   templateUrl: './shipping-method.component.html',
   styleUrls: ['./shipping-method.component.scss']
 })

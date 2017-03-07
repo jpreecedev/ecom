@@ -1,0 +1,15 @@
+<div *ngIf="galleryData">
+  <div class="primary">
+    <img [src]="galleryData.imageUrlRegular" [attr.data-zoom-image]="galleryData.imageUrlLarge" [alt]="galleryData.alt" [title]="galleryData.title" />
+  </div>
+
+  <div class="thumbs" id="gallery" *ngIf="galleryData.items">
+    <ul class="thumbs-list">
+      <li *ngFor="let item of galleryData.items">
+        <a class="active" [attr.data-image]="item.imageUrlRegular" [title]="item.title" [attr.data-zoom-image]="item.imageUrlLarge">
+          <img [src]="item.imageUrlRegular" [alt]="item.alt" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

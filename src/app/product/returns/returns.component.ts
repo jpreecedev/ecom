@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-product-returns',
   encapsulation: ViewEncapsulation.None,
+  selector: 'app-product-returns',
   templateUrl: './returns.component.html',
   styleUrls: ['./returns.component.scss']
 })

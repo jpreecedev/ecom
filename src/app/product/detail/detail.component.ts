@@ -1,20 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
+import { ProductDetail } from './detail.service';
 
 @Component({
-  selector: 'app-detail',
+  encapsulation: ViewEncapsulation.None,
   templateUrl: './detail.component.html',
   styleUrls: ['./detail.component.scss']
 })
 export class DetailComponent implements OnInit {
 
-  public description: String;
+  public productDetail: ProductDetail;
 
-  constructor(route: ActivatedRoute) {
-    this.description = route.snapshot.params.description;
-  }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.data.subscribe((data: { productDetail: ProductDetail }) => {
+      this.productDetail = data.productDetail;
+    });
   }
 
 }

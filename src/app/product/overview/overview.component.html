@@ -1,37 +1,36 @@
-<form enctype="multipart/form-data" action="#" onsubmit="return false;" method="post">
+<div *ngIf="overview">
 
   <div class="details">
-    <h1>Chaser Overalls</h1>
-    <div class="prices"><span class="price">£92.00</span></div>
+    <h1>{{overview.title}}</h1>
+    <div class="prices"><span class="price">{{overview.price | currency:'GBP':true}}</span></div>
 
     <div class="meta">
       <div class="sku">
         <i class="fa fa-pencil"></i>
-        <span rel="tooltip" title="SKU is 0092">0092</span>
+        <span rel="tooltip">{{overview.sku}}</span>
       </div>
 
       <div class="categories">
-        <span><i class="fa fa-tags"></i><a href="category.html" title="Dresses">Dresses</a></span>,
-        <a href="category.html" title="Womens">Womens</a>
+        <span>
+          <i class="fa fa-tags"></i>
+        </span>
+        <a *ngFor="let category of overview.categories" [href]="category.url" [title]="category.title">{{category.title}}</a>
       </div>
     </div>
   </div>
 
   <div class="short-description">
-    <p>Vintage-style faux leather short overalls. Long adjustable straps with brass detailing, exposed zip at back, and side
-      slant pockets with single rear welt pocket.</p>
+    <p>{{overview.description}}</p>
   </div>
 
-  <div class="options">
+  <div class="options" *ngIf="overview.options">
     <div class="row">
       <div class="col-sm-6">
         <div class="form-group">
-
-          <label for="product_options" class="control-label">Leather</label>
+          <label for="product_options" class="control-label">{{overview.options.title}}</label>
           <div class="controls">
             <select id="product_options" name="product_options[]" class="form-control">
-                  <option value="Brown">Brown</option>
-                  <option value="Black" selected="selected">Black</option>
+                <option *ngFor="let option of overview.options.options" [value]="option.value">{{option.description}}</option>
               </select>
           </div>
         </div>
@@ -44,4 +43,4 @@
           <i class="fa fa-plus"></i> &nbsp; Add to basket
       </button>
   </div>
-</form>
+</div>

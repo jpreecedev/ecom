@@ -2,8 +2,8 @@ import { Title } from '@angular/platform-browser';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-change-password',
   encapsulation: ViewEncapsulation.None,
+  selector: 'app-change-password',
   templateUrl: './change-password.component.html',
   styleUrls: ['./change-password.component.scss']
 })

@@ -139,17 +139,6 @@
       urlCurl: share_url
     });
 
-    /* ElevateZoom effect on product page */
-    $('.product-images .primary img').elevateZoom({
-      zoomType: "inner",
-      cursor: "crosshair",
-      easing: true,
-      zoomWindowFadeIn: 300,
-      zoomWindowFadeOut: 300,
-      gallery: 'gallery',
-      galleryActiveClass: 'active'
-    });
-
     /* Header search bar auto complete popup */
     $('#query').keyup(function () {
       $('#autocomplete-results').css({
@@ -172,16 +161,16 @@
 
   });
   /*$(window).smartresize(function() {
-  	"use strict";	
-  	
+  	"use strict";
+
   	var screen_width = $(window).width();
-  	
+
   	var $product_list = $('.product-list.isotope');
   	if (typeof($product_list.isotope)!='undefined'){
   		$product_list.isotope('reLayout');
-  	}	
+  	}
 
-  	
+
   	boutique.resize_menu(screen_width);
   });*/
   $(function () {

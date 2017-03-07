@@ -2,8 +2,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-checkout-start',
   encapsulation: ViewEncapsulation.None,
+  selector: 'app-checkout-start',
   templateUrl: './start.component.html',
   styleUrls: ['./start.component.scss']
 })
