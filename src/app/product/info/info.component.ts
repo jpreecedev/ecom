@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -7,5 +7,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent {
+
+  @Input() markup: string;
 
 }

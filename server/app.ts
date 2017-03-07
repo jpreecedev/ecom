@@ -5,7 +5,7 @@ import * as compression from 'compression';
 
 import { loginRouter } from './routes/login';
 import { protectedRouter } from './routes/protected';
-import { productRouter } from './routes/product';
+import { productRouter } from './routes/products';
 
 import * as config from './config';
 

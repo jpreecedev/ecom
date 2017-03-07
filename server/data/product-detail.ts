@@ -28,6 +28,9 @@ export default {
       ]
     }
   },
+  info: {
+    markup: '<p><span>Vintage-style faux leather short overalls. <strong>Long adjustable</strong> straps with brass detailing, exposed zip at back, and side slant pockets with single rear welt pocket.</span><br/><br /><span>100% Polyester</span></p>'
+  },
   gallery: {
     imageUrlRegular: 'https://images-eu.ssl-images-amazon.com/images/I/41Aq54fKr8L._AC_UL260_SR200,260_.jpg',
     imageUrlLarge: 'https://images-eu.ssl-images-amazon.com/images/I/41Aq54fKr8L._AC_UL501_SR385,501_FMwebp_QL65_.jpg',

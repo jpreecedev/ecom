@@ -72,7 +72,7 @@
                     <app-product-overview [overview]="productDetail.overview"></app-product-overview>
                   </div>
                   <div class="tab-pane" id="description">
-                    <app-product-info></app-product-info>
+                    <app-product-info [markup]="productDetail.info?.markup"></app-product-info>
                   </div>
                   <div class="tab-pane" id="shipping">
                     <app-product-shipping></app-product-shipping>
