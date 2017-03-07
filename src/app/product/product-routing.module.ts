@@ -12,6 +12,10 @@ export const productRoutes: Routes = [
       {
         path: ':description',
         component: DetailComponent
+      },
+      {
+        path: '',
+        component: DetailComponent
       }
     ]
   }

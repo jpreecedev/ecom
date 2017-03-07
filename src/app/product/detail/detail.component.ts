@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-detail',
+  encapsulation: ViewEncapsulation.None,
   templateUrl: './detail.component.html',
   styleUrls: ['./detail.component.scss']
 })
@@ -10,11 +10,14 @@ export class DetailComponent implements OnInit {
 
   public description: String;
 
-  constructor(route: ActivatedRoute) {
+  constructor(public router: Router, route: ActivatedRoute) {
     this.description = route.snapshot.params.description;
   }
 
   ngOnInit() {
+    if (!this.description) {
+      this.router.navigate(['../']);
+    }
   }
 
 }
