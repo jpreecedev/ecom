@@ -1,4 +1,33 @@
 export default {
+  overview: {
+    title: 'Super nice pair of jeans',
+    price: '23.23',
+    sku: 'ABC123',
+    description: 'This is the description, make it good.',
+    categories: [
+      {
+        title: 'Dresses',
+        url: '/dresses'
+      },
+      {
+        title: 'Women',
+        url: '/women'
+      }
+    ],
+    options: {
+      title: 'Leather',
+      options: [
+        {
+          value: 'brown',
+          description: 'Brown'
+        },
+        {
+          value: 'black',
+          description: 'Black'
+        }
+      ]
+    }
+  },
   gallery: {
     imageUrlRegular: 'https://images-eu.ssl-images-amazon.com/images/I/41Aq54fKr8L._AC_UL260_SR200,260_.jpg',
     imageUrlLarge: 'https://images-eu.ssl-images-amazon.com/images/I/41Aq54fKr8L._AC_UL501_SR385,501_FMwebp_QL65_.jpg',
