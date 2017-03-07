@@ -10,11 +10,13 @@ import { ProductDetail } from './detail.service';
 })
 export class DetailComponent implements OnInit {
 
+  public productDetail: ProductDetail;
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.route.data.subscribe((data: { productDetail: ProductDetail[] }) => {
-
+    this.route.data.subscribe((data: { productDetail: ProductDetail }) => {
+      this.productDetail = data.productDetail;
     });
   }
 

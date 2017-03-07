@@ -1,10 +1,10 @@
 import { Router, Response, Request } from 'express';
-import categories from '../data/categories';
+import productDetail from '../data/product-detail';
 
 const router: Router = Router();
 
 router.get('/:id/:description', (request: Request, response: Response) => {
-    response.send(categories);
+  response.send(productDetail);
 });
 
 export { router as productRouter }
