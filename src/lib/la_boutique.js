@@ -15,29 +15,6 @@
     var base = $('base').attr('href');
     var screen_width = $(window).width();
 
-    /* Options Panel / Colour Scheme Picker for theme demo */
-    (function () {
-      var options_panel = $('.options-panel');
-      options_panel.find('.options-panel-toggle').on('click', function (event) {
-        options_panel.toggleClass('active');
-        if (options_panel.hasClass('active')) {
-          options_panel.animate({
-            'left': 0
-          }, 600, 'easeInOutBack');
-        } else {
-          options_panel.animate({
-            'left': '-' + options_panel.find('.options-panel-content').outerWidth()
-          }, 600, 'easeInOutBack');
-        }
-        event.preventDefault();
-      });
-      options_panel.find('#option_color_scheme').on('change', function () {
-        var stylesheet = $('#color_scheme');
-        stylesheet.attr('href', $(this).attr('value'));
-        $.cookie('color_scheme', $(this).attr('value'));
-      });
-    })();
-
     /* Click .box selects radio button on shipping methods and payment methods pages */
     (function () {
       $('#checkout-content').on('click', '.shipping-methods .box, .payment-methods .box', function (e) {
@@ -107,14 +84,6 @@
         });
       }, 3000);
     });
-
-    /* Options Panel / Colour Scheme Picker */
-    if (typeof ($.cookie('color_scheme')) != undefined) {
-      var stylesheet = $('#color_scheme');
-      stylesheet.attr('href', $.cookie('color_scheme'));
-
-      $('.options-panel #option_color_scheme').val($.cookie('color_scheme'));
-    }
 
   });
   $(function () {

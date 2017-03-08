@@ -27,7 +27,6 @@
         "lib/isotope.pkgd.min.js",
         "lib/jquery-migrate-1.2.1.min.js",
         "lib/jquery-ui-1.10.2.custom.js",
-        "lib/jquery.cookie.js",
         "lib/jquery.easing.min.js",
         "lib/jquery.elevatezoom.js",
         "lib/la_boutique.js",
