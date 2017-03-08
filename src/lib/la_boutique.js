@@ -13,7 +13,6 @@
     "use strict";
 
     var base = $('base').attr('href');
-    var share_url = base + 'sharrre/';
     var screen_width = $(window).width();
 
     /* Options Panel / Colour Scheme Picker for theme demo */
@@ -97,48 +96,6 @@
 
     })();
 
-    /* tooltip on product page */
-    $("[rel='tooltip']").tooltip();
-
-    /* Social share buttons on product page */
-    $('#sharrre .twitter').sharrre({
-      template: '<button class="btn btn-xs btn-twitter"><i class="fa fa-twitter"></i> &nbsp; {total}</button>',
-      share: {
-        twitter: true
-      },
-      enableHover: false,
-      enableTracking: true,
-      click: function (api, options) {
-        api.simulateClick();
-        api.openPopup('twitter');
-      }
-    });
-    $('#sharrre .facebook').sharrre({
-      template: '<button class="btn btn-xs btn-facebook"><i class="fa fa-facebook"></i> &nbsp; {total}</button>',
-      share: {
-        facebook: true
-      },
-      enableHover: false,
-      enableTracking: true,
-      click: function (api, options) {
-        api.simulateClick();
-        api.openPopup('facebook');
-      }
-    });
-    $('#sharrre .pinterest').sharrre({
-      template: '<button class="btn btn-xs btn-pinterest"><i class="fa fa-pinterest"></i> &nbsp; {total}</button>',
-      share: {
-        pinterest: true
-      },
-      enableHover: false,
-      enableTracking: true,
-      click: function (api, options) {
-        api.simulateClick();
-        api.openPopup('pinterest');
-      },
-      urlCurl: share_url
-    });
-
     /* Header search bar auto complete popup */
     $('#query').keyup(function () {
       $('#autocomplete-results').css({
@@ -160,19 +117,6 @@
     }
 
   });
-  /*$(window).smartresize(function() {
-  	"use strict";
-
-  	var screen_width = $(window).width();
-
-  	var $product_list = $('.product-list.isotope');
-  	if (typeof($product_list.isotope)!='undefined'){
-  		$product_list.isotope('reLayout');
-  	}
-
-
-  	boutique.resize_menu(screen_width);
-  });*/
   $(function () {
     "use strict";
 
