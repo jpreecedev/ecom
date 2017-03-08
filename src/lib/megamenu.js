@@ -25,7 +25,7 @@
     };
 
     var methods = {
-        
+
         init:function (options) {
 
             settings = $.extend(1, settings, options);
@@ -151,7 +151,7 @@
                             break;
 
                     }
-                    
+
                     switch (settings.menu_effect) {
 
                         case 'hover_fade':
@@ -205,7 +205,7 @@
 
 
                     }
-                
+
 
                 }
 
@@ -240,7 +240,7 @@
             dropDownFlyOutLevel = $this.children('.dropdown_flyout_level');
 
         dropDownMega = $(dropDownMega).add(dropDownFlyOutLevel);
-        
+
         switch (settings.menu_effect) {
             case 'hover_fade':
                 $(dropDownMega).fadeIn(settings.menu_speed_show);
@@ -273,7 +273,7 @@
 
 
     function megaMenuOut() {
-    
+
         var $this = $(this),
             dropDownMega = $('.dropdown_container, .dropdown_fullwidth, .dropdown_flyout_level', $this);
 
@@ -319,7 +319,7 @@
             $('.dropdown_flyout_level_left').css({'left':'-108%', 'right':'100%'}).hide();
             $('.megamenu').children('li').show(0);
             $('.megamenu_button').hide(0);
-        
+
         }
 
         $('.megamenu_container_vertical').find('.dropdown_container, .dropdown_fullwidth').css({'top':'0'});

@@ -56,5 +56,22 @@ export default {
         title: 'Hilfiger Denim Men\'s Jeans'
       }
     ]
+  },
+  shipping: {
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+    giftwrap: {
+      available: true,
+      cost: 0.99
+    },
+    methods: [
+      {
+        name: 'Royal Mail',
+        imageSrc: 'http://www.tfingi.com/repo/royal-mail.png'
+      },
+      {
+        name: 'UPS',
+        imageSrc: 'http://www.tfingi.com/repo/ups-logo.png'
+      }
+    ]
   }
 };

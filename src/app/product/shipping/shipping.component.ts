@@ -1,4 +1,19 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+
+interface ProductGiftWrap {
+  available: boolean;
+  cost: number;
+}
+
+interface ProductShippingMethods {
+  name: string;
+  imageSrc: string;
+}
+
+interface ProductShipping {
+  description: string;
+  giftwrap: ProductGiftWrap;
+}
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -7,5 +22,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./shipping.component.scss']
 })
 export class ShippingComponent {
+
+  @Input() shipping: ProductShipping;
 
 }
