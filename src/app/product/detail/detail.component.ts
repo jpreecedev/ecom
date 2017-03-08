@@ -12,10 +12,14 @@ export class DetailComponent implements OnInit {
 
   public productDetail: ProductDetail;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.data.subscribe((data: { productDetail: ProductDetail }) => {
+      if (!data.productDetail) {
+        this.router.navigate(['/']);
+        return;
+      }
       this.productDetail = data.productDetail;
     });
   }

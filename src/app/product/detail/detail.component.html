@@ -2,7 +2,7 @@
 <app-nav></app-nav>
 
 <section class="main">
-  <section class="product">
+  <section *ngIf="productDetail" class="product">
 
     <!-- Product info -->
     <section class="product-info">
@@ -10,7 +10,7 @@
         <div class="row">
 
           <div class="col-sm-4">
-            <div class="product-images">
+            <div *ngIf="productDetail" class="product-images">
               <div class="box">
                 <app-product-gallery [galleryData]="productDetail.gallery"></app-product-gallery>
                 <div class="social">
