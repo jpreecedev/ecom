@@ -1,13 +1,19 @@
-<div *ngIf="overview">
+<div *ngIf="overview" vocab="http://schema.org/" typeof="Product">
 
   <div class="details">
-    <h1>{{overview.title}}</h1>
-    <div class="prices"><span class="price">{{overview.price | currency:'GBP':true}}</span></div>
+    <h1 property="name">{{overview.title}}</h1>
+    <h3 property="brand">{{overview.brand}}</h3>
+    <div class="prices" property="offers" typeof="Offer">
+      <span class="price" property="priceCurrency" content="GBP">&pound;</span>
+      <span class="price" property="price">{{overview.price | number : '1.2-2'}}</span>
+      <link property="itemCondition" href="http://schema.org/NewCondition" />
+      <link property="availability" href="http://schema.org/InStock" />
+    </div>
 
     <div class="meta">
       <div class="sku">
         <i class="fa fa-pencil"></i>
-        <span rel="tooltip">{{overview.sku}}</span>
+        <span rel="tooltip" property="mpn">{{overview.sku}}</span>
       </div>
 
       <div class="categories">
@@ -20,7 +26,7 @@
   </div>
 
   <div class="short-description">
-    <p>{{overview.description}}</p>
+    <p property="description">{{overview.description}}</p>
   </div>
 
   <div class="options" *ngIf="overview.options">
