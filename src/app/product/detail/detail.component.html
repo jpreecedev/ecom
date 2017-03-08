@@ -25,34 +25,34 @@
 
                 <!-- Tab panels' navigation -->
                 <ul class="nav nav-tabs">
-                  <li class="active">
+                  <li *ngIf="productDetail.overview" class="active">
                     <a href="#product" data-toggle="tab">
                       <i class="fa fa-reorder fa-lg"></i>
                       <span class="hidden-xs">Product</span>
                     </a>
                   </li>
-                  <li>
+                  <li *ngIf="productDetail.info && productDetail.info.markup">
                     <a href="#description" data-toggle="tab">
                       <i class="fa fa-info-circle fa-lg"></i>
                       <span class="hidden-xs">Info</span>
                     </a>
                   </li>
 
-                  <li>
+                  <li *ngIf="productDetail.shipping">
                     <a href="#shipping" data-toggle="tab">
                       <i class="fa fa-truck fa-lg"></i>
                       <span class="hidden-xs">Shipping</span>
                     </a>
                   </li>
 
-                  <li>
+                  <li *ngIf="productDetail.returns">
                     <a href="#returns" data-toggle="tab">
                       <i class="fa fa-undo fa-lg"></i>
                       <span class="hidden-xs">Returns</span>
                     </a>
                   </li>
 
-                  <li>
+                  <li *ngIf="productDetail.ratings">
                     <a href="#ratings" data-toggle="tab">
                       <i class="fa fa-heart fa-lg"></i>
                       <span class="hidden-xs">Ratings</span>
@@ -61,20 +61,20 @@
                 </ul>
 
                 <div class="tab-content">
-                  <div class="tab-pane active" id="product">
+                  <div *ngIf="productDetail.overview" class="tab-pane active" id="product">
                     <app-product-overview [overview]="productDetail.overview"></app-product-overview>
                   </div>
-                  <div class="tab-pane" id="description">
-                    <app-product-info [markup]="productDetail.info?.markup"></app-product-info>
+                  <div *ngIf="productDetail.info && productDetail.info.markup" class="tab-pane" id="description">
+                    <app-product-info [markup]="productDetail.info.markup"></app-product-info>
                   </div>
-                  <div class="tab-pane" id="shipping">
+                  <div *ngIf="productDetail.shipping" class="tab-pane" id="shipping">
                     <app-product-shipping [shipping]="productDetail.shipping"></app-product-shipping>
                   </div>
-                  <div class="tab-pane" id="returns">
-                    <app-product-returns></app-product-returns>
+                  <div *ngIf="productDetail.returns" class="tab-pane" id="returns">
+                    <app-product-returns [returns]="productDetail.returns"></app-product-returns>
                   </div>
-                  <div class="tab-pane" id="ratings">
-                    <app-product-ratings></app-product-ratings>
+                  <div *ngIf="productDetail.ratings" class="tab-pane" id="ratings">
+                    <app-product-ratings [ratings]="productDetail.ratings"></app-product-ratings>
                   </div>
                 </div>
 

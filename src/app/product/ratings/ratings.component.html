@@ -1,17 +1,15 @@
-<div class="ratings-items">
+<div *ngIf="ratings" class="ratings-items">
 
-  <article class="rating-item">
+  <article *ngFor="let rating of ratings" class="rating-item">
     <div class="row">
       <div class="col-sm-9">
-        <h5>Shaped for crush</h5>
-        <p>I hope they release some more colours of this dress. It feels great and looks sexier.<br>
-          <br> I love it!</p>
+        <h5>{{rating.title}}</h5>
+        <p>{{rating.message}}</p>
       </div>
 
       <div class="col-sm-3">
-        <img src="assets/thumbnails/avatar.png" class="gravatar" alt="" />
-        <h6>Sam Ritora</h6>
-        <small>08/30/2013</small>
+        <h6>{{rating.reviewerName}}</h6>
+        <small>{{rating.date}}</small>
         <div class="rating rating-5">
           <i class="fa fa-heart"></i>
           <i class="fa fa-heart"></i>
@@ -61,12 +59,12 @@
                 <label class="control-label">Rating</label>
                 <div class="controls">
                   <select class="form-control" name="rate">
-		                                                                    <option value="1">1</option>
-		                                                                    <option value="2">2</option>
-		                                                                    <option value="3">3</option>
-		                                                                    <option value="4">4</option>
-		                                                                    <option value="5">5</option>
-		                                                                </select>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </select>
                 </div>
               </div>
             </div>

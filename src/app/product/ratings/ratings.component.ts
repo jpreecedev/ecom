@@ -1,4 +1,12 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
+
+interface ProductRatings {
+  title: string;
+  message: string;
+  reviewerName: string;
+  date: string;
+  score: number;
+}
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -7,5 +15,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./ratings.component.scss']
 })
 export class RatingsComponent {
+
+  @Input() ratings: ProductRatings;
 
 }
