@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { effects, store, instrumentation } from './store';
 
 import { AdminModule } from './admin/admin.module';
 import { EcomLoginModule } from './ecom-login/ecom-login.module';
@@ -29,7 +30,10 @@ import { ErrorsModule } from './errors/errors.module';
     ErrorsModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    effects,
+    store,
+    instrumentation
   ],
   providers: [
     Title
