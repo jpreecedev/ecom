@@ -3,8 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
-import { AppState, Basket } from '../../store';
-import { BASKET_REMOVE } from '../../store/basket/basket.actions';
+import { AppState, Basket, BasketActions } from '../../store';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -23,7 +22,7 @@ export class BasketComponent {
 
   removeFromBasket() {
     this.store.dispatch({
-      type: BASKET_REMOVE,
+      type: BasketActions.remove,
       payload: { id: 'ABC123' }
     })
   }

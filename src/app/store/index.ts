@@ -8,7 +8,10 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { environment } from '../../environments/environment';
 
+import { BASKET_ADD, BASKET_REMOVE } from './basket/basket.actions';
 import { BasketReducer } from './basket/basket.reducer';
+
+export const BasketActions = { add: BASKET_ADD, remove: BASKET_REMOVE };
 
 export interface AppState {
   basket: Basket;
