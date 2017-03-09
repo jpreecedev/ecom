@@ -14,7 +14,17 @@ export interface AppState {
   basket: Basket;
 }
 
-export interface BasketItem { }
+export interface BasketItem {
+  id: string;
+  imageUrl: string;
+  description: string;
+  size: string;
+  color: string;
+  quantity: number;
+  unitPrice: number;
+  discount: number;
+  total: number;
+}
 
 export interface Basket {
   items: BasketItem[];

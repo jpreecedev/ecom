@@ -1,5 +1,10 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs/Observable';
+
+import { AppState, Basket } from '../../store';
+import { BASKET_REMOVE } from '../../store/basket/basket.actions';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -9,7 +14,17 @@ import { Title } from '@angular/platform-browser';
 })
 export class BasketComponent {
 
-  constructor(titleService: Title) {
+  basket$: Observable<Basket>;
+
+  constructor(public store: Store<AppState>, titleService: Title) {
+    this.basket$ = store.select('basket');
     titleService.setTitle('Basket');
+  }
+
+  removeFromBasket() {
+    this.store.dispatch({
+      type: BASKET_REMOVE,
+      payload: { id: 'ABC123' }
+    })
   }
 }

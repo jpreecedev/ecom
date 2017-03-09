@@ -1,5 +1,6 @@
 export default {
   overview: {
+    id: 'ABC123',
     title: 'Super nice pair of jeans',
     price: '23.23',
     sku: 'ABC123',
