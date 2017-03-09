@@ -1,13 +1,6 @@
 import { Action, ActionReducer } from '@ngrx/store';
 import { BASKET_ADD } from './basket.actions';
-
-export interface BasketItem {
-
-}
-
-export interface Basket {
-    items: BasketItem[];
-}
+import { Basket } from '../index';
 
 export const BasketReducer: ActionReducer<Basket> = (state: Basket = { items: [] }, action: Action): Basket => {
 

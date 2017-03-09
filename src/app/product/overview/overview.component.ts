@@ -1,5 +1,10 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs/Observable';
+
+import { AppState, Basket } from '../../store';
+import { BASKET_ADD } from '../../store/basket/basket.actions';
 
 interface ProductOption {
   value: string;
@@ -34,8 +39,17 @@ interface ProductOverview {
 export class OverviewComponent {
 
   @Input() overview: ProductOverview;
+  basket$: Observable<Basket>;
 
-  constructor() {
+  constructor(public store: Store<AppState>) {
+    this.basket$ = store.select('basket');
+  }
+
+  addToBasket() {
+    this.store.dispatch({
+      type: BASKET_ADD,
+      payload: this.overview
+    });
   }
 
 }

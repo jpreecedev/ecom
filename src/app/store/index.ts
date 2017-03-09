@@ -8,35 +8,41 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { environment } from '../../environments/environment';
 
-import { BasketReducer, Basket } from './basket/basket.reducer';
+import { BasketReducer } from './basket/basket.reducer';
 
 export interface AppState {
-    basket: Basket;
- }
+  basket: Basket;
+}
+
+export interface BasketItem { }
+
+export interface Basket {
+  items: BasketItem[];
+}
 
 const reducers = {
-    basket: BasketReducer
+  basket: BasketReducer
 };
 
 const productionReducer: ActionReducer<AppState> = combineReducers(reducers);
 const developmentReducer: ActionReducer<AppState> = compose(storeFreeze, combineReducers)(reducers);
 
 export function reducer(state: AppState, action: Action) {
-    if (environment.production) {
-        return productionReducer(state, action);
-    } else {
-        return developmentReducer(state, action);
-    }
+  if (environment.production) {
+    return productionReducer(state, action);
+  } else {
+    return developmentReducer(state, action);
+  }
 }
 
 @NgModule()
 export class DummyModule {
 
-    static forRoot(): ModuleWithProviders {
-        return {
-            ngModule: CommonModule
-        };
-    }
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: CommonModule
+    };
+  }
 }
 
 export const store: ModuleWithProviders = StoreModule.provideStore(reducer);

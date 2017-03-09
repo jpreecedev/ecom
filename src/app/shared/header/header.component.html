@@ -79,7 +79,7 @@
         <!-- Mini cart -->
         <div class="mini-cart">
           <a routerLink="/basket" title="Go to basket &rarr;">
-            <span>3</span>
+            <span>{{ (basket$ | async)?.items.length }}</span>
           </a>
         </div>
         <!-- End class="mini-cart" -->
