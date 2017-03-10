@@ -2,6 +2,6 @@
 
   <app-carousel></app-carousel>
   <app-promotions></app-promotions>
-  <app-featured></app-featured>
+  <app-featured *ngIf="products" [products]="products"></app-featured>
 
 </section>

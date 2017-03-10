@@ -1,6 +1,6 @@
 import { Action, ActionReducer } from '@ngrx/store';
 import { BASKET_ADD, BASKET_REMOVE } from './basket.actions';
-import { Basket, BasketItem } from '../index';
+import { Basket, BasketItem } from '../../app.interfaces';
 
 export const BasketReducer: ActionReducer<Basket> = (state: Basket = { items: [] }, action: Action): Basket => {
 

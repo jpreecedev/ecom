@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy, Input } from '@angular/core';
+import { ProductDetail } from '../../app.interfaces';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -8,5 +9,7 @@ import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@
   styleUrls: ['./single-product.component.scss']
 })
 export class SingleProductComponent {
+
+  @Input() product: ProductDetail;
 
 }

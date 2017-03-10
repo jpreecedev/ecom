@@ -2,7 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
-import { AppState, Basket } from '../../store';
+import { AppState, Basket } from '../../app.interfaces';
 
 @Component({
   encapsulation: ViewEncapsulation.None,

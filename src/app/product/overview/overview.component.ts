@@ -3,8 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
-import { AppState, Basket } from '../../store';
 import { BASKET_ADD } from '../../store/basket/basket.actions';
+import { AppState, Basket, ProductOverview } from '../../app.interfaces';
 
 @Component({
   encapsulation: ViewEncapsulation.None,

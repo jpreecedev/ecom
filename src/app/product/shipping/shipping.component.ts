@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation, Input, ChangeDetectionStrategy } from '@angular/core';
+import { ProductShipping } from '../../app.interfaces';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

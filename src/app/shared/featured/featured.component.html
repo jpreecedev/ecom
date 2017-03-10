@@ -4,13 +4,8 @@
     <div class="row">
       <div class="col-sm-9">
         <!-- Products list -->
-        <ul class="product-list isotope">
-          <app-single-product></app-single-product>
-          <app-single-product></app-single-product>
-          <app-single-product></app-single-product>
-          <app-single-product></app-single-product>
-          <app-single-product></app-single-product>
-          <app-single-product></app-single-product>
+        <ul *ngIf="products" class="product-list isotope">
+          <app-single-product *ngFor="let product of products" [product]="product"></app-single-product>
         </ul>
         <!-- End class="product-list isotope" -->
       </div>

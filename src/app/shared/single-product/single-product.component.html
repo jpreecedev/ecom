@@ -1,15 +1,15 @@
-<li class="standard" data-price="58">
-  <a [routerLink]="" title="Lisette Dress">
-    <div class="image">
-      <img class="primary" src="assets/thumbnails/db_file_img_48_640xauto.jpg" alt="Lisette Dress" />
-      <img class="secondary" src="assets/thumbnails/db_file_img_49_640xauto.jpg" alt="Lisette Dress" />
+<li *ngIf="product && product.overview" class="standard" [attr.data-price]="product.overview.price">
+  <a [href]="product.overview.url" [title]="product.overview.title">
+    <div class="image" *ngIf="product.gallery">
+      <img class="primary" [src]="product.gallery.imageUrlRegular" [alt]="product.gallery.alt" />
+      <img class="secondary" [src]="product.gallery.imageUrlLarge" [alt]="product.gallery.alt" />
     </div>
 
     <div class="title">
-      <div class="prices">
-        <span class="price">£58.00</span>
+      <div *ngIf="product.overview" class="prices">
+        <span class="price">£{{product.overview.price}}</span>
       </div>
-      <h3>Lisette Dress</h3>
+      <h3>{{product.overview.title}}</h3>
       <div class="rating rating-4.5">
         <i class="fa fa-heart"></i>
         <i class="fa fa-heart"></i>

@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, Response, RequestMethod, RequestOptionsArgs } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
-import { JwtHelper } from './jwt-helper.service';
-import { IJwt } from './jwt.service';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
+
+import { JwtHelper } from './jwt-helper.service';
+import { IJwt } from '../../app.interfaces';
 import { AppSettings } from '../../app.settings';
 
 @Injectable()

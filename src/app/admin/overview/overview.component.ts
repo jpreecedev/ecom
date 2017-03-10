@@ -1,5 +1,5 @@
-import 'lib/klorofil';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import 'lib/klorofil';
 
 @Component({
   encapsulation: ViewEncapsulation.None,

@@ -8,10 +8,15 @@ import { HomeComponent } from './home/home.component';
 import { ListerComponent } from './lister/lister.component';
 import { BasketComponent } from './basket/basket.component';
 
+import { HomeResolver } from './home/home-resolver.service';
+
 export const publicRoutes: Routes = [
   {
     path: '',
     component: PublicComponent,
+    resolve: {
+      products: HomeResolver
+    },
     children: [
       { path: '', pathMatch: 'full', component: HomeComponent },
       { path: 'l', component: ListerComponent },

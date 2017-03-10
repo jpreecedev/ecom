@@ -14,6 +14,9 @@ import { PublicRoutingModule } from './public-routing.module';
 import { AboutComponent } from './about/about.component';
 import { BasketComponent } from './basket/basket.component';
 
+import { HomeService } from './home/home.service';
+import { HomeResolver } from './home/home-resolver.service';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -29,6 +32,10 @@ import { BasketComponent } from './basket/basket.component';
     PublicComponent,
     AboutComponent,
     BasketComponent
+  ],
+  providers: [
+    HomeService,
+    HomeResolver
   ]
 })
 export class PublicModule { }

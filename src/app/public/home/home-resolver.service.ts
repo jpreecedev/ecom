@@ -8,18 +8,18 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/first';
 
 import { ProductDetail } from '../../app.interfaces';
-import { DetailService } from './detail.service';
+import { HomeService } from './home.service';
 
 @Injectable()
-export class DetailResolver implements Resolve<ProductDetail> {
+export class HomeResolver implements Resolve<ProductDetail> {
 
-  constructor(private detailService: DetailService, private router: Router) { }
+  constructor(private homeService: HomeService, private router: Router) { }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<ProductDetail> {
     let id: Number = route.params.id;
     let description: String = route.params.description;
 
-    return this.detailService.getPageData(id, description);
+    return this.homeService.getPageData(id, description);
   }
 
 }

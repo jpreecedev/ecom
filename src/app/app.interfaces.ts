@@ -1,3 +1,16 @@
+export interface ProductDetail {
+  overview: ProductOverview;
+  info: ProductInfo;
+  gallery: ProductGallery;
+  shipping: ProductShipping;
+  returns: ProductReturns;
+  ratings: ProductRatings;
+}
+
+export interface ProductInfo {
+  markup: string;
+}
+
 export interface ProductOption {
   value: string;
   description: string;
@@ -18,6 +31,7 @@ export interface ProductOverview {
   price: string;
   sku: string;
   description: string;
+  url: string;
   options: ProductOptions;
   categories: ProductCategory[];
 }

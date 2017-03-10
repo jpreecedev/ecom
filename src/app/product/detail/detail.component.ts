@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { ProductDetail } from './detail.service';
+import { ProductDetail } from '../../app.interfaces';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

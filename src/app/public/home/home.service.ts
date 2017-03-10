@@ -8,12 +8,12 @@ import { AppSettings } from '../../app.settings';
 import { ProductDetail } from '../../app.interfaces';
 
 @Injectable()
-export class DetailService {
+export class HomeService {
 
   constructor(public httpService: HttpService) { }
 
   getPageData(id: Number, description: String): Observable<ProductDetail> {
-    return this.httpService.get(`${AppSettings.API_ENDPOINT}/product/${id}/${description}/`)
+    return this.httpService.get(`${AppSettings.API_ENDPOINT}/home/`)
       .map((response: Response) => {
         return response.json();
       });
