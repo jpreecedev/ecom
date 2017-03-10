@@ -1,17 +1,5 @@
 import { Component, AfterViewInit, ViewEncapsulation, Input, ChangeDetectionStrategy } from '@angular/core';
-
-interface ProductGallery extends ProductGalleryInfo {
-  items: ProductGalleryItem[];
-}
-
-interface ProductGalleryItem extends ProductGalleryInfo { }
-
-interface ProductGalleryInfo {
-  imageUrlRegular: String;
-  imageUrlLarge: String;
-  title: String;
-  alt: String;
-}
+import { ProductGallery } from '../../app.interfaces';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

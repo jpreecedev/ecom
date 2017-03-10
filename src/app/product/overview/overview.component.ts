@@ -6,30 +6,6 @@ import { Observable } from 'rxjs/Observable';
 import { AppState, Basket } from '../../store';
 import { BASKET_ADD } from '../../store/basket/basket.actions';
 
-interface ProductOption {
-  value: string;
-  description: string;
-}
-
-interface ProductOptions {
-  title: string;
-  options: ProductOption[];
-}
-
-interface ProductCategory {
-  title: string;
-  url: string;
-}
-
-interface ProductOverview {
-  title: string;
-  price: string;
-  sku: string;
-  description: string;
-  options: ProductOptions;
-  categories: ProductCategory[];
-}
-
 @Component({
   encapsulation: ViewEncapsulation.None,
   selector: 'app-product-overview',

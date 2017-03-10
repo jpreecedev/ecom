@@ -1,18 +1,9 @@
 import { Injectable } from '@angular/core';
-import { IJwt } from './jwt.service';
+import { IJwtBody, IJwt } from '../../app.interfaces';
+
 import { Cookie } from './cookies.service';
 
 declare var escape: any;
-
-export interface IJwtBody {
-    aud: string;
-    exp: number;
-    iss: string;
-    nbf: number;
-    role: string | string[];
-    sub: string;
-    unique_name: string;
-}
 
 @Injectable()
 export class JwtHelper {

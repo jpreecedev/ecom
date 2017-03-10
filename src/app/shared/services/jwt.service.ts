@@ -1,10 +1,5 @@
 import { JwtHelper } from './jwt-helper.service';
 
-export interface IJwt {
-    access_token: string;
-    expires_in: number;
-}
-
 export function hasValidToken(roles?: string[]): boolean {
 
     roles = roles || ['TachographCentre'];

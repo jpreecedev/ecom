@@ -1,12 +1,5 @@
 import { Component, Input, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
-
-interface ProductRatings {
-  title: string;
-  message: string;
-  reviewerName: string;
-  date: string;
-  score: number;
-}
+import { ProductRatings } from '../../app.interfaces';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

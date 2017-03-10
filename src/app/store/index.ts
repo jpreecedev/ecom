@@ -7,31 +7,12 @@ import { storeFreeze } from 'ngrx-store-freeze';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { environment } from '../../environments/environment';
+import { AppState } from '../app.interfaces';
 
 import { BASKET_ADD, BASKET_REMOVE } from './basket/basket.actions';
 import { BasketReducer } from './basket/basket.reducer';
 
 export const BasketActions = { add: BASKET_ADD, remove: BASKET_REMOVE };
-
-export interface AppState {
-  basket: Basket;
-}
-
-export interface BasketItem {
-  id: string;
-  imageUrl: string;
-  description: string;
-  size: string;
-  color: string;
-  quantity: number;
-  unitPrice: number;
-  discount: number;
-  total: number;
-}
-
-export interface Basket {
-  items: BasketItem[];
-}
 
 const reducers = {
   basket: BasketReducer

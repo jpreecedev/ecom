@@ -3,7 +3,8 @@ import { Title } from '@angular/platform-browser';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
-import { AppState, Basket, BasketActions } from '../../store';
+import { Basket, AppState } from '../../app.interfaces';
+import { BasketActions } from '../../store';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
