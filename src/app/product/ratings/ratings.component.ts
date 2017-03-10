@@ -1,4 +1,4 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
 
 interface ProductRatings {
   title: string;
@@ -9,6 +9,7 @@ interface ProductRatings {
 }
 
 @Component({
+  changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
   selector: 'app-product-ratings',
   templateUrl: './ratings.component.html',

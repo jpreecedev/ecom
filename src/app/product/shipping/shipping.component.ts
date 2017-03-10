@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input, ChangeDetectionStrategy } from '@angular/core';
 
 interface ProductGiftWrap {
   available: boolean;
@@ -16,6 +16,7 @@ interface ProductShipping {
 }
 
 @Component({
+  changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
   selector: 'app-product-shipping',
   templateUrl: './shipping.component.html',
