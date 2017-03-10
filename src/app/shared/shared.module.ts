@@ -24,7 +24,7 @@ import { OrderHistoryItemComponent } from './order-history-item/order-history-it
 import { ResetPasswordFormComponent } from './reset-password-form/reset-password-form.component';
 import { PromotionsComponent } from './promotions/promotions.component';
 import { CategoriesComponent } from './categories/categories.component';
-import { ProductComponent } from './product/product.component';
+import { SingleProductComponent } from './single-product/single-product.component';
 import { FilterCategoryComponent } from './filter-category/filter-category.component';
 import { FilterPriceComponent } from './filter-price/filter-price.component';
 
@@ -46,7 +46,7 @@ import { FilterPriceComponent } from './filter-price/filter-price.component';
     ResetPasswordFormComponent,
     PromotionsComponent,
     CategoriesComponent,
-    ProductComponent,
+    SingleProductComponent,
     FilterCategoryComponent,
     FilterPriceComponent
   ],
@@ -78,7 +78,7 @@ import { FilterPriceComponent } from './filter-price/filter-price.component';
     ResetPasswordFormComponent,
     PromotionsComponent,
     CategoriesComponent,
-    ProductComponent,
+    SingleProductComponent,
     FilterCategoryComponent,
     FilterPriceComponent
   ]
