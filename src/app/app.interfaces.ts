@@ -100,6 +100,7 @@ export interface AppState {
 export interface BasketItem {
   id: string;
   imageUrl: string;
+  title: string;
   description: string;
   size: string;
   color: string;
