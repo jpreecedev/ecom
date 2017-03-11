@@ -15,11 +15,11 @@ export const publicRoutes: Routes = [
     path: '',
     component: PublicComponent,
     resolve: {
-      products: HomeResolver
+      routeData: HomeResolver
     },
     children: [
       { path: '', pathMatch: 'full', component: HomeComponent },
-      { path: 'l', component: ListerComponent },
+      { path: 'l/:category/:subCategory', component: ListerComponent },
       { path: 'basket', component: BasketComponent },
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent }

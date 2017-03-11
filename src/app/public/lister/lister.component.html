@@ -11,23 +11,10 @@
       <div class="col-sm-9">
 
         <!-- Products list -->
-        <ul class="product-list isotope">
-          <app-single-product></app-single-product>
-          <app-single-product></app-single-product>
-          <app-single-product></app-single-product>
-          <app-single-product></app-single-product>
-          <app-single-product></app-single-product>
-          <app-single-product></app-single-product>
+        <ul *ngIf="products" class="product-list isotope">
+          <app-single-product *ngFor="let product of products" [product]="product"></app-single-product>
         </ul>
         <!-- End class="product-list isotope" -->
-
-        <!-- "Load More" Button -->
-
-        <button id="load_more" class="btn btn-block" data-category="16" data-rows="20" data-page="1" data-featured="true">
-            <span>Load more</span> &nbsp; <i class="fa fa-spinner fa-spin fa-lg"></i>
-        </button>
-
-        <!-- End "Load More" Button -->
 
       </div>
     </div>

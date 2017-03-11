@@ -1,11 +1,11 @@
-<div class="widget Categories">
+<div *ngIf="categories" class="widget Categories">
   <h3 class="widget-title widget-title ">Categories</h3>
   <ul>
     <li *ngFor="let parentCategory of categories">
-      <a href="{{parentCategory.url}}" class="title">{{parentCategory.name}}</a>
+      <a [routerLink]="parentCategory.url" class="title">{{parentCategory.name}}</a>
       <ul>
         <li *ngFor="let childCategory of parentCategory.categories">
-          <a href="{{childCategory.url}}" class="title">{{childCategory.name}}</a>
+          <a [routerLink]="childCategory.url" class="title">{{childCategory.name}}</a>
         </li>
       </ul>
     </li>

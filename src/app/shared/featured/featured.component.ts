@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy, Input } from '@angular/core';
-import { ProductOverview } from '../../app.interfaces';
+import { ProductOverview, ProductCategory } from '../../app.interfaces';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -11,5 +11,6 @@ import { ProductOverview } from '../../app.interfaces';
 export class FeaturedComponent {
 
   @Input() products: ProductOverview[];
+  @Input() categories: ProductCategory[];
 
 }
