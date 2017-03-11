@@ -24,31 +24,31 @@ export default {
         description: 'This is the description, make it good.',
         url: '/product/bob_bob/ABC123',
         category: {
-          name: 'Womens',
-          url: '/l/women',
+          name: 'Ladies',
+          url: '/l/ladies',
           subCategories: [{
             name: 'Shoes',
-            url: '/women/shoes'
+            url: '/l/ladies/shoes'
           },
           {
             name: 'Dresses',
-            url: '/l/women/dresses'
+            url: '/l/ladies/dresses'
           },
           {
             name: 'Bags',
-            url: '/l/women/bags'
+            url: '/l/ladies/bags'
           },
           {
             name: 'Trousers',
-            url: '/l/women/trousers'
+            url: '/l/ladies/trousers'
           },
           {
             name: 'Tops',
-            url: '/l/women/tops'
+            url: '/l/ladies/tops'
           },
           {
             name: 'Accessories',
-            url: '/l/women/accessories'
+            url: '/l/ladies/accessories'
           }
           ]
         }
@@ -68,31 +68,31 @@ export default {
         description: 'This is the description, make it good.',
         url: '/product/bob_bob/ABC123',
         category: {
-          name: 'Womens',
-          url: '/l/women',
+          name: 'Ladies',
+          url: '/l/ladies',
           subCategories: [{
             name: 'Shoes',
-            url: '/women/shoes'
+            url: '/l/ladies/shoes'
           },
           {
             name: 'Dresses',
-            url: '/l/women/dresses'
+            url: '/l/ladies/dresses'
           },
           {
             name: 'Bags',
-            url: '/l/women/bags'
+            url: '/l/ladies/bags'
           },
           {
             name: 'Trousers',
-            url: '/l/women/trousers'
+            url: '/l/ladies/trousers'
           },
           {
             name: 'Tops',
-            url: '/l/women/tops'
+            url: '/l/ladies/tops'
           },
           {
             name: 'Accessories',
-            url: '/l/women/accessories'
+            url: '/l/ladies/accessories'
           }
           ]
         }
@@ -112,31 +112,31 @@ export default {
         description: 'This is the description, make it good.',
         url: '/product/bob_bob/ABC123',
         category: {
-          name: 'Womens',
-          url: '/l/women',
+          name: 'Ladies',
+          url: '/l/ladies',
           subCategories: [{
             name: 'Shoes',
-            url: '/women/shoes'
+            url: '/l/ladies/shoes'
           },
           {
             name: 'Dresses',
-            url: '/l/women/dresses'
+            url: '/l/ladies/dresses'
           },
           {
             name: 'Bags',
-            url: '/l/women/bags'
+            url: '/l/ladies/bags'
           },
           {
             name: 'Trousers',
-            url: '/l/women/trousers'
+            url: '/l/ladies/trousers'
           },
           {
             name: 'Tops',
-            url: '/l/women/tops'
+            url: '/l/ladies/tops'
           },
           {
             name: 'Accessories',
-            url: '/l/women/accessories'
+            url: '/l/ladies/accessories'
           }
           ]
         }
@@ -156,31 +156,31 @@ export default {
         description: 'This is the description, make it good.',
         url: '/product/bob_bob/ABC123',
         category: {
-          name: 'Womens',
-          url: '/l/women',
+          name: 'Ladies',
+          url: '/l/ladies',
           subCategories: [{
             name: 'Shoes',
-            url: '/women/shoes'
+            url: '/l/ladies/shoes'
           },
           {
             name: 'Dresses',
-            url: '/l/women/dresses'
+            url: '/l/ladies/dresses'
           },
           {
             name: 'Bags',
-            url: '/l/women/bags'
+            url: '/l/ladies/bags'
           },
           {
             name: 'Trousers',
-            url: '/l/women/trousers'
+            url: '/l/ladies/trousers'
           },
           {
             name: 'Tops',
-            url: '/l/women/tops'
+            url: '/l/ladies/tops'
           },
           {
             name: 'Accessories',
-            url: '/l/women/accessories'
+            url: '/l/ladies/accessories'
           }
           ]
         }
@@ -200,31 +200,31 @@ export default {
         description: 'This is the description, make it good.',
         url: '/product/bob_bob/ABC123',
         category: {
-          name: 'Womens',
-          url: '/l/women',
+          name: 'Ladies',
+          url: '/l/ladies',
           subCategories: [{
             name: 'Shoes',
-            url: '/women/shoes'
+            url: '/l/ladies/shoes'
           },
           {
             name: 'Dresses',
-            url: '/l/women/dresses'
+            url: '/l/ladies/dresses'
           },
           {
             name: 'Bags',
-            url: '/l/women/bags'
+            url: '/l/ladies/bags'
           },
           {
             name: 'Trousers',
-            url: '/l/women/trousers'
+            url: '/l/ladies/trousers'
           },
           {
             name: 'Tops',
-            url: '/l/women/tops'
+            url: '/l/ladies/tops'
           },
           {
             name: 'Accessories',
-            url: '/l/women/accessories'
+            url: '/l/ladies/accessories'
           }
           ]
         }
