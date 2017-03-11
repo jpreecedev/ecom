@@ -7,6 +7,7 @@ import { loginRouter } from './routes/login';
 import { protectedRouter } from './routes/protected';
 import { productRouter } from './routes/product';
 import { homeRouter } from './routes/home';
+import { listerRouter } from './routes/lister';
 
 import * as config from './config';
 
@@ -34,6 +35,7 @@ app.use('/api/secure', protectedRouter);
 app.use('/api/login', loginRouter);
 app.use('/api/product', productRouter);
 app.use('/api/home', homeRouter);
+app.use('/api/lister', listerRouter);
 
 if (app.get('env') === 'production') {
   app.use(express.static(path.join(__dirname, '/../client')));

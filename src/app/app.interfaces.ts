@@ -24,6 +24,7 @@ export interface ProductOptions {
 export interface ProductCategory {
   title: string;
   url: string;
+  subCategories: ProductCategory[];
 }
 
 export interface ProductOverview {
@@ -33,7 +34,7 @@ export interface ProductOverview {
   description: string;
   url: string;
   options: ProductOptions;
-  categories: ProductCategory[];
+  category: ProductCategory;
 }
 
 export interface ProductGallery extends ProductGalleryInfo {

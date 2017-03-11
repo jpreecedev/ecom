@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+import { ProductDetail, ProductCategory } from '../../app.interfaces';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -8,5 +9,6 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class FilterCategoryComponent {
 
+  @Input() category: ProductCategory[];
 
 }

@@ -22,7 +22,36 @@ export default {
         price: '23.23',
         sku: 'ABC123',
         description: 'This is the description, make it good.',
-        url: '/product/bob_bob/ABC123'
+        url: '/product/bob_bob/ABC123',
+        category: {
+          name: 'Womens',
+          url: '/l/women',
+          subCategories: [{
+            name: 'Shoes',
+            url: '/women/shoes'
+          },
+          {
+            name: 'Dresses',
+            url: '/l/women/dresses'
+          },
+          {
+            name: 'Bags',
+            url: '/l/women/bags'
+          },
+          {
+            name: 'Trousers',
+            url: '/l/women/trousers'
+          },
+          {
+            name: 'Tops',
+            url: '/l/women/tops'
+          },
+          {
+            name: 'Accessories',
+            url: '/l/women/accessories'
+          }
+          ]
+        }
       },
       gallery: {
         imageUrlRegular: 'https://images-eu.ssl-images-amazon.com/images/I/41Aq54fKr8L._AC_UL260_SR200,260_.jpg',
@@ -37,7 +66,36 @@ export default {
         price: '23.23',
         sku: 'ABC123',
         description: 'This is the description, make it good.',
-        url: '/product/bob_bob/ABC123'
+        url: '/product/bob_bob/ABC123',
+        category: {
+          name: 'Womens',
+          url: '/l/women',
+          subCategories: [{
+            name: 'Shoes',
+            url: '/women/shoes'
+          },
+          {
+            name: 'Dresses',
+            url: '/l/women/dresses'
+          },
+          {
+            name: 'Bags',
+            url: '/l/women/bags'
+          },
+          {
+            name: 'Trousers',
+            url: '/l/women/trousers'
+          },
+          {
+            name: 'Tops',
+            url: '/l/women/tops'
+          },
+          {
+            name: 'Accessories',
+            url: '/l/women/accessories'
+          }
+          ]
+        }
       },
       gallery: {
         imageUrlRegular: 'https://images-eu.ssl-images-amazon.com/images/I/41Aq54fKr8L._AC_UL260_SR200,260_.jpg',
@@ -52,7 +110,36 @@ export default {
         price: '23.23',
         sku: 'ABC123',
         description: 'This is the description, make it good.',
-        url: '/product/bob_bob/ABC123'
+        url: '/product/bob_bob/ABC123',
+        category: {
+          name: 'Womens',
+          url: '/l/women',
+          subCategories: [{
+            name: 'Shoes',
+            url: '/women/shoes'
+          },
+          {
+            name: 'Dresses',
+            url: '/l/women/dresses'
+          },
+          {
+            name: 'Bags',
+            url: '/l/women/bags'
+          },
+          {
+            name: 'Trousers',
+            url: '/l/women/trousers'
+          },
+          {
+            name: 'Tops',
+            url: '/l/women/tops'
+          },
+          {
+            name: 'Accessories',
+            url: '/l/women/accessories'
+          }
+          ]
+        }
       },
       gallery: {
         imageUrlRegular: 'https://images-eu.ssl-images-amazon.com/images/I/41Aq54fKr8L._AC_UL260_SR200,260_.jpg',
@@ -67,7 +154,36 @@ export default {
         price: '23.23',
         sku: 'ABC123',
         description: 'This is the description, make it good.',
-        url: '/product/bob_bob/ABC123'
+        url: '/product/bob_bob/ABC123',
+        category: {
+          name: 'Womens',
+          url: '/l/women',
+          subCategories: [{
+            name: 'Shoes',
+            url: '/women/shoes'
+          },
+          {
+            name: 'Dresses',
+            url: '/l/women/dresses'
+          },
+          {
+            name: 'Bags',
+            url: '/l/women/bags'
+          },
+          {
+            name: 'Trousers',
+            url: '/l/women/trousers'
+          },
+          {
+            name: 'Tops',
+            url: '/l/women/tops'
+          },
+          {
+            name: 'Accessories',
+            url: '/l/women/accessories'
+          }
+          ]
+        }
       },
       gallery: {
         imageUrlRegular: 'https://images-eu.ssl-images-amazon.com/images/I/41Aq54fKr8L._AC_UL260_SR200,260_.jpg',
@@ -82,7 +198,36 @@ export default {
         price: '23.23',
         sku: 'ABC123',
         description: 'This is the description, make it good.',
-        url: '/product/bob_bob/ABC123'
+        url: '/product/bob_bob/ABC123',
+        category: {
+          name: 'Womens',
+          url: '/l/women',
+          subCategories: [{
+            name: 'Shoes',
+            url: '/women/shoes'
+          },
+          {
+            name: 'Dresses',
+            url: '/l/women/dresses'
+          },
+          {
+            name: 'Bags',
+            url: '/l/women/bags'
+          },
+          {
+            name: 'Trousers',
+            url: '/l/women/trousers'
+          },
+          {
+            name: 'Tops',
+            url: '/l/women/tops'
+          },
+          {
+            name: 'Accessories',
+            url: '/l/women/accessories'
+          }
+          ]
+        }
       },
       gallery: {
         imageUrlRegular: 'https://images-eu.ssl-images-amazon.com/images/I/41Aq54fKr8L._AC_UL260_SR200,260_.jpg',
@@ -92,63 +237,33 @@ export default {
       }
     }
   ],
-  categories: [{
+  category: {
     name: 'Mens',
-    url: '/l/men',
-    categories: [{
-      name: 'T-Shirts',
-      url: '/l/mens/t-shirts'
+    url: '/l/mens',
+    subCategories: [{
+      name: 'Accessories',
+      url: '/l/mens/accessories'
     },
     {
       name: 'Jackets',
-      url: '/mens/jackets'
+      url: '/l/mens/jackets'
     },
     {
       name: 'Jumpers',
       url: '/l/mens/jumpers'
     },
     {
-      name: 'Shoes',
-      url: '/l/mens/shoes'
-    },
-    {
       name: 'Shirts',
       url: '/l/mens/shirts'
     },
     {
-      name: 'Accessories',
-      url: '/l/mens/accessories'
-    }
-    ]
-  },
-  {
-    name: 'Womens',
-    url: '/l/women',
-    categories: [{
       name: 'Shoes',
-      url: '/women/shoes'
+      url: '/l/mens/shoes'
     },
     {
-      name: 'Dresses',
-      url: '/l/women/dresses'
-    },
-    {
-      name: 'Bags',
-      url: '/l/women/bags'
-    },
-    {
-      name: 'Trousers',
-      url: '/l/women/trousers'
-    },
-    {
-      name: 'Tops',
-      url: '/l/women/tops'
-    },
-    {
-      name: 'Accessories',
-      url: '/l/women/accessories'
+      name: 'T-Shirts',
+      url: '/l/mens/t-shirts'
     }
     ]
   }
-  ]
 };

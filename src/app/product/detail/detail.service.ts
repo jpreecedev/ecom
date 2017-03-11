@@ -13,7 +13,7 @@ export class DetailService {
   constructor(public httpService: HttpService) { }
 
   getPageData(id: Number, description: String): Observable<ProductDetail> {
-    return this.httpService.get(`${AppSettings.API_ENDPOINT}/product/${id}/${description}/`)
+    return this.httpService.get(`/product/${id}/${description}/`)
       .map((response: Response) => {
         return response.json();
       });

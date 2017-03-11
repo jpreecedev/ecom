@@ -3,9 +3,6 @@ import { Response } from '@angular/http';
 import { Router, Resolve, RouterStateSnapshot, ActivatedRouteSnapshot } from '@angular/router';
 
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/first';
 
 import { ProductDetail } from '../../app.interfaces';
 import { DetailService } from './detail.service';

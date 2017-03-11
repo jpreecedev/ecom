@@ -12,6 +12,7 @@ import { ShippingComponent } from './shipping/shipping.component';
 
 import { DetailResolver } from './detail/detail-resolver.service';
 import { DetailService } from './detail/detail.service';
+
 import { ProductRoutingModule } from './product-routing.module';
 import { DetailComponent } from './detail/detail.component';
 import { ProductGalleryComponent } from './product-gallery/product-gallery.component';

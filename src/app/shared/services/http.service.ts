@@ -14,19 +14,19 @@ export class HttpService {
   constructor(private http: Http) { }
 
   get(url: string): Observable<Response> {
-    return this._request({ url: url, method: RequestMethod.Get, headers: this.getRequestHeaders(false) });
+    return this._request({ url: `${AppSettings.API_ENDPOINT}${url}`, method: RequestMethod.Get, headers: this.getRequestHeaders(false) });
   }
 
   post(url: string, body: string): Observable<Response> {
-    return this._request({ url: url, body: body, method: RequestMethod.Post, headers: this.getRequestHeaders(false) });
+    return this._request({ url: `${AppSettings.API_ENDPOINT}${url}`, body: body, method: RequestMethod.Post, headers: this.getRequestHeaders(false) });
   }
 
   put(url: string, body: string): Observable<Response> {
-    return this._request({ url: url, body: body, method: RequestMethod.Put, headers: this.getRequestHeaders(false) });
+    return this._request({ url: `${AppSettings.API_ENDPOINT}${url}`, body: body, method: RequestMethod.Put, headers: this.getRequestHeaders(false) });
   }
 
   delete(url: string, body: string): Observable<Response> {
-    return this._request({ url: url, body: body, method: RequestMethod.Delete, headers: this.getRequestHeaders(false) });
+    return this._request({ url: `${AppSettings.API_ENDPOINT}${url}`, body: body, method: RequestMethod.Delete, headers: this.getRequestHeaders(false) });
   }
 
   getRequestHeaders(isAuthenticating: boolean): Headers {

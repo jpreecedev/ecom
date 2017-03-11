@@ -16,6 +16,8 @@ import { BasketComponent } from './basket/basket.component';
 
 import { HomeService } from './home/home.service';
 import { HomeResolver } from './home/home-resolver.service';
+import { ListerResolver } from './lister/lister-resolver.service';
+import { ListerService } from './lister/lister.service';
 
 @NgModule({
   imports: [
@@ -35,7 +37,9 @@ import { HomeResolver } from './home/home-resolver.service';
   ],
   providers: [
     HomeService,
-    HomeResolver
+    HomeResolver,
+    ListerResolver,
+    ListerService
   ]
 })
 export class PublicModule { }
