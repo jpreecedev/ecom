@@ -27,6 +27,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { SingleProductComponent } from './single-product/single-product.component';
 import { FilterCategoryComponent } from './filter-category/filter-category.component';
 import { FilterPriceComponent } from './filter-price/filter-price.component';
+import { SocialIconsComponent } from './social-icons/social-icons.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { FilterPriceComponent } from './filter-price/filter-price.component';
     CategoriesComponent,
     SingleProductComponent,
     FilterCategoryComponent,
-    FilterPriceComponent
+    FilterPriceComponent,
+    SocialIconsComponent
   ],
   providers: [
     HttpService,
@@ -80,7 +82,8 @@ import { FilterPriceComponent } from './filter-price/filter-price.component';
     CategoriesComponent,
     SingleProductComponent,
     FilterCategoryComponent,
-    FilterPriceComponent
+    FilterPriceComponent,
+    SocialIconsComponent
   ]
 })
 export class SharedModule { }
