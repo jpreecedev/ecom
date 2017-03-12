@@ -11,7 +11,6 @@ import { ContactComponent } from './contact/contact.component';
 import { ListerComponent } from './lister/lister.component';
 
 import { PublicRoutingModule } from './public-routing.module';
-import { AboutComponent } from './about/about.component';
 import { BasketComponent } from './basket/basket.component';
 
 import { HomeService } from './home/home.service';
@@ -32,7 +31,6 @@ import { ListerService } from './lister/lister.service';
     ContactComponent,
     ListerComponent,
     PublicComponent,
-    AboutComponent,
     BasketComponent
   ],
   providers: [

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
     encapsulation: ViewEncapsulation.None,
@@ -7,6 +7,5 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
     styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent {
-
 
 }

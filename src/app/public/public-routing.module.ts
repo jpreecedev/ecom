@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { PublicComponent } from './public.component';
-import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { ListerComponent } from './lister/lister.component';
@@ -35,7 +34,6 @@ export const publicRoutes: Routes = [
         }
       },
       { path: 'basket', component: BasketComponent },
-      { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent }
     ]
   }

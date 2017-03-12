@@ -23,31 +23,6 @@
       });
     })();
 
-    /* Slider on home page */
-    (function () {
-      var slider = $('#slider');
-      slider.slider({
-        range: true,
-        min: 0,
-        max: slider.data('max'),
-        values: [0, slider.data('max')],
-        step: slider.data('step'),
-        animate: 200,
-        slide: function (event, ui) {
-          $('#slider-label').find('strong').html(slider.data('currency') + ui.values[0] + ' &ndash; ' + slider.data('currency') + ui.values[1]);
-        },
-        change: function (event, ui) {
-          var products = $('.product-list').find('li').filter(function () {
-            return ($(this).data('price') >= ui.values[0]) && $(this).data('price') <= ui.values[1] ? true : false;
-          });
-          var $product_list = $('.product-list.isotope');
-          $product_list.isotope({
-            filter: products
-          });
-        }
-      });
-    })();
-
     /* Isotope on shop pages */
     (function () {
       var $product_list = $('.product-list.isotope');
