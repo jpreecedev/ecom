@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs/Observable';
+import { Subscription } from 'rxjs/Subscription';
 
 import { Basket, AppState } from '../../app.interfaces';
 import { BasketActions } from '../../store';
@@ -12,12 +12,16 @@ import { BasketActions } from '../../store';
   templateUrl: './basket.component.html',
   styleUrls: ['./basket.component.scss']
 })
-export class BasketComponent {
+export class BasketComponent implements OnDestroy {
 
-  basket$: Observable<Basket>;
+  basket: Basket;
+  private subscription: Subscription;
 
   constructor(public store: Store<AppState>, titleService: Title) {
-    this.basket$ = store.select('basket');
+    this.subscription = store.select('basket')
+      .subscribe((basket: Basket) => {
+        this.basket = basket;
+      });
     titleService.setTitle('Basket');
   }
 
@@ -25,6 +29,10 @@ export class BasketComponent {
     this.store.dispatch({
       type: BasketActions.remove,
       payload: { id: 'ABC123' }
-    })
+    });
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }

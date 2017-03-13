@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewEncapsulation, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs/Observable';
+import { Subscription } from 'rxjs/Subscription';
 
 import { BASKET_ADD } from '../../store/basket/basket.actions';
 import { AppState, Basket, ProductOverview } from '../../app.interfaces';
@@ -12,13 +12,18 @@ import { AppState, Basket, ProductOverview } from '../../app.interfaces';
   templateUrl: './overview.component.html',
   styleUrls: ['./overview.component.scss']
 })
-export class OverviewComponent {
+export class OverviewComponent implements OnDestroy {
 
   @Input() overview: ProductOverview;
-  basket$: Observable<Basket>;
+  basket: Basket;
+
+  private subscription: Subscription;
 
   constructor(public store: Store<AppState>) {
-    this.basket$ = store.select('basket');
+    this.subscription = store.select('basket')
+      .subscribe((basket: Basket) => {
+        this.basket = basket;
+      });
   }
 
   addToBasket() {
@@ -26,6 +31,10 @@ export class OverviewComponent {
       type: BASKET_ADD,
       payload: this.overview
     });
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
 }
