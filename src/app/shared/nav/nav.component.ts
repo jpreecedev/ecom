@@ -1,4 +1,7 @@
-import { Component, AfterViewInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewEncapsulation } from '@angular/core';
+
+import { MegaMenu } from '../../app.interfaces';
+import { NavService } from './nav.service';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -6,7 +9,17 @@ import { Component, AfterViewInit, ViewEncapsulation } from '@angular/core';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss'],
 })
-export class NavComponent implements AfterViewInit {
+export class NavComponent implements OnInit, AfterViewInit {
+
+  menu: MegaMenu;
+
+  constructor(public navService: NavService) { }
+
+  ngOnInit() {
+    this.navService.getMegaMenu().subscribe((response: MegaMenu) => {
+      this.menu = response;
+    });
+  }
 
   ngAfterViewInit() {
     $(window).resize(this.tfingi_megamenu_init);

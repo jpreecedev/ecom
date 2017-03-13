@@ -4,7 +4,6 @@ import { Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 
 import { HttpService } from '../../shared/services/http.service';
-import { AppSettings } from '../../app.settings';
 import { ProductDetail } from '../../app.interfaces';
 
 @Injectable()

@@ -94,7 +94,7 @@ export default {
   ],
   categories: [{
     name: 'Mens',
-    url: '/l/men',
+    url: '/l/mens',
     categories: [{
       name: 'T-Shirts',
       url: '/l/mens/t-shirts'

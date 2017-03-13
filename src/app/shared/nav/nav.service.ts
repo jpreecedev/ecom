@@ -4,15 +4,15 @@ import { Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 
 import { HttpService } from '../../shared/services/http.service';
-import { ProductOverview } from '../../app.interfaces';
+import { MegaMenu } from '../../app.interfaces';
 
 @Injectable()
-export class ListerService {
+export class NavService {
 
   constructor(public httpService: HttpService) { }
 
-  getPageData(category: String, subCategory: String): Observable<ProductOverview[]> {
-    return this.httpService.get(`/lister/${category}/${subCategory}/`)
+  getMegaMenu(): Observable<MegaMenu> {
+    return this.httpService.get(`/megamenu/`)
       .map((response: Response) => {
         return response.json();
       });

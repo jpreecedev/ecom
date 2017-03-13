@@ -7,6 +7,7 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 import { HttpService } from './services/http.service';
 import { JwtHelper } from './services/jwt-helper.service';
+import { NavService } from './nav/nav.service';
 
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselItemComponent } from './carousel-item/carousel-item.component';
@@ -56,7 +57,8 @@ import { EmptyBasketComponent } from './empty-basket/empty-basket.component';
   ],
   providers: [
     HttpService,
-    JwtHelper
+    JwtHelper,
+    NavService
   ],
   imports: [
     CommonModule,

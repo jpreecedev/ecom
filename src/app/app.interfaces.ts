@@ -97,6 +97,10 @@ export interface AppState {
   basket: Basket;
 }
 
+export interface MegaMenu {
+  shop: ProductCategory[];
+}
+
 export interface BasketItem {
   id: string;
   imageUrl: string;
