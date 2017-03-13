@@ -1,6 +1,6 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs/Observable';
+import { Subscription } from 'rxjs/Subscription';
 
 import { AppState, Basket } from '../../app.interfaces';
 
@@ -10,12 +10,20 @@ import { AppState, Basket } from '../../app.interfaces';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnDestroy {
 
-  basket$: Observable<Basket>;
+  basket: Basket;
+  private subscription: Subscription;
 
   constructor(public store: Store<AppState>) {
-    this.basket$ = store.select('basket');
+    this.subscription = store.select('basket')
+      .subscribe((basket: Basket) => {
+        this.basket = basket;
+      });
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
 }

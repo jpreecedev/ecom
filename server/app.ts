@@ -1,7 +1,20 @@
+import 'angular2-universal/polyfills';
 import * as express from 'express';
 import { json, urlencoded } from 'body-parser';
 import * as path from 'path';
 import * as compression from 'compression';
+
+import { provideRouter } from '@angular/router';
+import {
+  expressEngine,
+  BASE_URL,
+  REQUEST_URL,
+  ORIGIN_URL,
+  NODE_LOCATION_PROVIDERS,
+  NODE_HTTP_PROVIDERS,
+  ExpressEngineConfig
+} from 'angular2-universal';
+
 
 import { loginRouter } from './routes/login';
 import { protectedRouter } from './routes/protected';

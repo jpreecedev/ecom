@@ -1,7 +1,7 @@
 <section class="cart">
 
   <div class="container">
-    <div class="row" *ngIf="(basket$ | async).items.length > 0">
+    <div class="row" *ngIf="basket && basket.items.length > 0">
 
       <div class="col-sm-9">
 
@@ -10,7 +10,7 @@
 
             <div class="box-header">
               <h3>Basket</h3>
-              <h5>You currently have <strong>{{(basket$ | async).items.length}}</strong> item(s) in your basket</h5>
+              <h5>You currently have <strong>{{basket.items.length}}</strong> item(s) in your basket</h5>
             </div>
 
             <div class="box-content">
@@ -29,7 +29,7 @@
 
                   <tbody>
                     <tr>
-                      <td ngFor="let item in (basket$ | async).items" data-title="Product" class="col_product text-left">
+                      <td ngFor="let item in basket.items" data-title="Product" class="col_product text-left">
                         <div class="image visible-lg">
                           <a [routerLink]="item.url">
                             <img [src]="item.imageUrl" [alt]="item.title">
@@ -128,7 +128,7 @@
       </div>
 
     </div>
-    <div class="row" *ngIf="(basket$ | async).items.length === 0">
+    <div class="row" *ngIf="basket && basket.items.length === 0">
       <app-empty-basket></app-empty-basket>
     </div>
   </div>

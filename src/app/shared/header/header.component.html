@@ -78,8 +78,8 @@
 
         <!-- Mini cart -->
         <div class="mini-cart">
-          <a routerLink="/basket" title="Go to basket &rarr;">
-            <span>{{ (basket$ | async)?.items.length }}</span>
+          <a *ngIf="basket && basket.items" routerLink="/basket" title="Go to basket &rarr;">
+            <span>{{ basket.items.length }}</span>
           </a>
         </div>
         <!-- End class="mini-cart" -->
