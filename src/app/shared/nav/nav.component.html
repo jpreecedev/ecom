@@ -61,66 +61,18 @@
               </li>
 
               <li *ngIf="menu && menu.shop" class="menu-item-has-children">
-                <span>Shop</span>
+                <a routerLink="/l/">Shop</a>
                 <ul class="sub-menu">
-                  <li class="menu-item-has-children">
-                    <a routerLink="/l/ladies">Ladies</a>
-                    <ul class="sub-menu">
-                      <li><a href="category.html">Dresses</a></li>
-                      <li><a href="category.html">Tops</a></li>
-                      <li><a href="category.html" title="Shirts">Shirts</a></li>
-                      <li><a href="category.html" title="Shoes">Shoes</a></li>
-                      <li class="menu-item-has-children"><a href="#_" title="Accesories">Accesories</a>
-                        <ul>
-                          <li><a href="category.html" title="Hats">Hats</a></li>
-                          <li><a href="category.html" title="Belts">Belts</a></li>
-                          <li><a href="category.html" title="Socks">Socks</a></li>
-
-                          <li class="menu-item-has-children"><a href="#_" title="More levels"><strong>And much more...</strong></a>
-                            <ul>
-                              <li><a href="#_" title="Earphones">Earphones</a></li>
-                              <li><a href="#_" title="Headphones">Headphones</a></li>
-                              <li><a href="#_" title="Sunglasses">Sunglasses</a></li>
-                            </ul>
-                          </li>
-                        </ul>
+                  <li *ngFor="let parentCategory of menu.shop" [class.menu-item-has-children]="parentCategory.categories">
+                    <a [routerLink]="parentCategory.url" [title]="parentCategory.name">{{parentCategory.name}}</a>
+                    <ul *ngIf="parentCategory.categories" class="sub-menu">
+                      <li *ngFor="let childCategory of parentCategory.categories">
+                        <a [routerLink]="childCategory.url" [title]="childCategory.name">
+                          {{childCategory.name}}
+                        </a>
                       </li>
                     </ul>
                   </li>
-                  <li class="menu-item-has-children">
-                    <a href="category.html">Mens</a>
-                    <ul class="sub-menu">
-                      <li><a href="category.html">Shoes</a></li>
-                      <li><a href="category.html">Accesories</a></li>
-                      <li><a href="category.html" title="Shirts">Shirts</a></li>
-                      <li><a href="category.html" title="Shoes">Shoes</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="category.html">Girls</a>
-                    <ul class="sub-menu">
-                      <li><a href="category.html">Dresses</a></li>
-                      <li><a href="category.html">Tops</a></li>
-                      <li><a href="category.html" title="Shirts">Shirts</a></li>
-                      <li><a href="category.html" title="Shoes">Shoes</a></li>
-                      <li class="menu-item-has-children"><a href="#_" title="Accesories">Accesories</a>
-                        <ul>
-                          <li><a href="category.html" title="Hats">Hats</a></li>
-                          <li><a href="category.html" title="Belts">Belts</a></li>
-                          <li><a href="category.html" title="Socks">Socks</a></li>
-                          <li class="menu-item-has-children">
-                            <a href="#_" title="More levels"><strong>And much more...</strong></a>
-                            <ul>
-                              <li><a href="#_" title="Earphones">Earphones</a></li>
-                              <li><a href="#_" title="Headphones">Headphones</a></li>
-                              <li><a href="#_" title="Sunglasses">Sunglasses</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href="category.html" title="Sale">Sale</a></li>
                 </ul>
               </li>
 

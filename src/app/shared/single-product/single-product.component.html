@@ -1,5 +1,5 @@
 <li *ngIf="product && product.overview" class="standard" [attr.data-price]="product.overview.price">
-  <a [href]="product.overview.url" [title]="product.overview.title">
+  <a [routerLink]="product.overview.url" [title]="product.overview.title">
     <div class="image" *ngIf="product.gallery">
       <img class="primary" [src]="product.gallery.imageUrlRegular" [alt]="product.gallery.alt" />
       <img class="secondary" [src]="product.gallery.imageUrlLarge" [alt]="product.gallery.alt" />
