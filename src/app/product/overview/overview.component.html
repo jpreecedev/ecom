@@ -1,11 +1,11 @@
-<div *ngIf="overview" vocab="http://schema.org/" typeof="Product">
+<div *ngIf="product.overview" vocab="http://schema.org/" typeof="Product">
 
   <div class="details">
-    <h1 property="name">{{overview.title}}</h1>
-    <h3 property="brand">{{overview.brand}}</h3>
+    <h1 property="name">{{product.overview.title}}</h1>
+    <h3 property="brand">{{product.overview.brand}}</h3>
     <div class="prices" property="offers" typeof="Offer">
       <span class="price" property="priceCurrency" content="GBP">&pound;</span>
-      <span class="price" property="price">{{overview.price | number : '1.2-2'}}</span>
+      <span class="price" property="price">{{product.overview.price | number : '1.2-2'}}</span>
       <link property="itemCondition" href="http://schema.org/NewCondition" />
       <link property="availability" href="http://schema.org/InStock" />
     </div>
@@ -13,30 +13,30 @@
     <div class="meta">
       <div class="sku">
         <i class="fa fa-pencil"></i>
-        <span rel="tooltip" property="mpn">{{overview.sku}}</span>
+        <span rel="tooltip" property="mpn">{{product.overview.sku}}</span>
       </div>
 
       <div class="categories">
         <span>
           <i class="fa fa-tags"></i>
         </span>
-        <a *ngFor="let category of overview.categories" [href]="category.url" [title]="category.title">{{category.title}}</a>
+        <a *ngFor="let category of product.overview.categories" [href]="category.url" [title]="category.title">{{category.title}}</a>
       </div>
     </div>
   </div>
 
   <div class="short-description">
-    <p property="description">{{overview.description}}</p>
+    <p property="description">{{product.overview.description}}</p>
   </div>
 
-  <div class="options" *ngIf="overview.options">
+  <div class="options" *ngIf="product.overview.options">
     <div class="row">
       <div class="col-sm-6">
         <div class="form-group">
-          <label for="product_options" class="control-label">{{overview.options.title}}</label>
+          <label for="product_options" class="control-label">{{product.overview.options.title}}</label>
           <div class="controls">
             <select id="product_options" name="product_options[]" class="form-control">
-                <option *ngFor="let option of overview.options.options" [value]="option.value">{{option.description}}</option>
+                <option *ngFor="let option of product.overview.options.options" [value]="option.value">{{option.description}}</option>
               </select>
           </div>
         </div>

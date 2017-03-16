@@ -62,7 +62,7 @@
 
                 <div class="tab-content">
                   <div *ngIf="productDetail.overview" class="tab-pane active" id="product">
-                    <app-product-overview [overview]="productDetail.overview"></app-product-overview>
+                    <app-product-overview [product]="productDetail"></app-product-overview>
                   </div>
                   <div *ngIf="productDetail.info && productDetail.info.markup" class="tab-pane" id="description">
                     <app-product-info [markup]="productDetail.info.markup"></app-product-info>

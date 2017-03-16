@@ -15,51 +15,53 @@
 
             <div class="box-content">
               <div class="cart-items">
-                <table class="styled-table">
+                <table class="shop_table cart styled-table" cellspacing="0">
                   <thead>
                     <tr>
-                      <th class="col_product text-left">Product</th>
-                      <th class="col_remove text-right">&nbsp;</th>
-                      <th class="col_qty text-right">Qty</th>
-                      <th class="col_single text-right">Single</th>
-                      <th class="col_discount text-right">Discount</th>
-                      <th class="col_total text-right">Total</th>
+
+                      <th class="product-thumbnail text-left">Product</th>
+                      <th class="product-name text-left"></th>
+                      <th class="product-remove text-right">&nbsp;</th>
+                      <th class="product-price text-right">Price</th>
+                      <th class="product-quantity text-right">Quantity</th>
+                      <th class="product-subtotal text-right">Total</th>
                     </tr>
                   </thead>
-
                   <tbody>
-                    <tr>
-                      <td ngFor="let item in basket.items" data-title="Product" class="col_product text-left">
-                        <div class="image visible-lg">
-                          <a [routerLink]="item.url">
-                            <img [src]="item.imageUrl" [alt]="item.title">
+                    <tr *ngFor="let item of basket.items" class="cart_item">
+
+                      <td data-title="Thumbnail" class="text-left product-thumbnail">
+                        <div class="image">
+                          <a [href]="item.overview.url">
+                            <img [src]="item.gallery.imageUrlBasket" [alt]="item.gallery.alt" class="attachment-shop_thumbnail">
                           </a>
                         </div>
-
-                        <h5>
-                          <a [routerLink]="item.url">{{item.title}}</a>
-                          <p *ngIf="item.description">{{item.description}}</p>
-                        </h5>
                       </td>
 
-                      <td data-title="Remove" class="col_remove text-right">
-                        <a (click)="removeFromBasket(item)">
-                          <i class="fa fa-trash fa-lg"></i>
-                        </a>
+                      <td data-title="Product" class="product-name text-left">
+                        <a [href]="item.overview.url">{{item.overview.title}}</a>
                       </td>
 
-                      <td data-title="Qty" class="col_qty text-right">
-                        <input type="number" name="item_quantity[]" [value]="item.quantity" />
+                      <td data-title="Remove" class="product-remove text-right">
+                        <a (click)="removeFromBasket(item)" class="remove" title="Remove this item">
+                          <i class="fa fa-trash fa-lg"></i></a>
                       </td>
 
-                      <td data-title="Single" class="col_single text-right">
-                        <span class="single-price">£{{item.unitPrice | number:'1.2-2'}}</span>
+                      <td data-title="Price" class="product-price text-right">
+                        <span class="amount">£{{item.overview.price | number: '1.2-2'}}</span>
                       </td>
 
-                      <td data-title="Total" class="col_total text-right">
-                        <span class="total-price">£{{item.total | number:'1.2-2'}}</span>
+                      <td data-title="Quantity" class="product-quantity text-right">
+                        <div class="quantity">
+                          <input type="number" step="1" min="0" name="quantity" [(ngModel)]="item.quantity" title="Qty" class="input-text qty text" size="4">
+                        </div>
+                      </td>
+
+                      <td data-title="Total" class="product-subtotal text-right">
+                        <span class="amount">£{{item.overview.price * item.quantity | number: '1.2-2'}}</span>
                       </td>
                     </tr>
+
                   </tbody>
                 </table>
               </div>
@@ -70,10 +72,6 @@
                 <i class="fa fa-chevron-left"></i> &nbsp; Continue shopping
               </a>
               <div class="pull-right">
-                <button type="submit" class="btn btn-sm">
-                    <i class="fa fa-undo"></i> &nbsp; Update basket
-                </button>
-
                 <button type="submit" name="checkout" value="1" class="btn btn-primary btn-sm">
                     Proceed to checkout &nbsp; <i class="fa fa-chevron-right"></i>
                 </button>

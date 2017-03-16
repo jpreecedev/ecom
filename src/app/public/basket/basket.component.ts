@@ -3,7 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { Store } from '@ngrx/store';
 import { Subscription } from 'rxjs/Subscription';
 
-import { Basket, AppState } from '../../app.interfaces';
+import { Basket, BasketItem, AppState } from '../../app.interfaces';
 import { BasketActions } from '../../store';
 
 @Component({
@@ -25,10 +25,10 @@ export class BasketComponent implements OnDestroy {
     titleService.setTitle('Basket');
   }
 
-  removeFromBasket() {
+  removeFromBasket(basketItem: BasketItem) {
     this.store.dispatch({
       type: BasketActions.remove,
-      payload: { id: 'ABC123' }
+      payload: { id: basketItem.id }
     });
   }
 

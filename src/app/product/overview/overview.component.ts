@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { Subscription } from 'rxjs/Subscription';
 
 import { BASKET_ADD } from '../../store/basket/basket.actions';
-import { AppState, Basket, ProductOverview } from '../../app.interfaces';
+import { AppState, Basket, ProductDetail } from '../../app.interfaces';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -14,7 +14,7 @@ import { AppState, Basket, ProductOverview } from '../../app.interfaces';
 })
 export class OverviewComponent implements OnDestroy {
 
-  @Input() overview: ProductOverview;
+  @Input() product: ProductDetail;
   basket: Basket;
 
   private subscription: Subscription;
@@ -29,7 +29,7 @@ export class OverviewComponent implements OnDestroy {
   addToBasket() {
     this.store.dispatch({
       type: BASKET_ADD,
-      payload: this.overview
+      payload: this.product
     });
   }
 
