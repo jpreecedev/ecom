@@ -9,13 +9,21 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../../environments/environment';
 import { AppState } from '../app.interfaces';
 
-import { BASKET_ADD, BASKET_REMOVE } from './basket/basket.actions';
+import { BASKET_ADD, BASKET_REMOVE, BASKET_DECREMENT_QUANTITY, BASKET_INCREMENT_QUANTITY, BASKET_SET_QUANTITY } from './basket/basket.actions';
 import { BasketReducer } from './basket/basket.reducer';
+import { BasketItemReducer } from './basket/basket-item.reducer';
 
-export const BasketActions = { add: BASKET_ADD, remove: BASKET_REMOVE };
+export const BasketActions = {
+  add: BASKET_ADD,
+  remove: BASKET_REMOVE,
+  setQuantity: BASKET_SET_QUANTITY,
+  increment: BASKET_INCREMENT_QUANTITY,
+  decrement: BASKET_DECREMENT_QUANTITY
+};
 
 const reducers = {
-  basket: BasketReducer
+  basket: BasketReducer,
+  basketItem: BasketItemReducer
 };
 
 const productionReducer: ActionReducer<AppState> = combineReducers(reducers);

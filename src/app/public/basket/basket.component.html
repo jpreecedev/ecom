@@ -53,7 +53,7 @@
 
                       <td data-title="Quantity" class="product-quantity text-right">
                         <div class="quantity">
-                          <input type="number" step="1" min="0" name="quantity" [(ngModel)]="item.quantity" title="Qty" class="input-text qty text" size="4">
+                          <input type="number" step="1" min="0" name="quantity" value="1" title="Qty" [ngModel]="item.quantity" #qty (change)="updateQuantity(item, qty.value)" class="input-text qty text" size="4">
                         </div>
                       </td>
 

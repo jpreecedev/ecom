@@ -25,6 +25,13 @@ export class BasketComponent implements OnDestroy {
     titleService.setTitle('Basket');
   }
 
+  updateQuantity(basketItem: BasketItem, newQuantity: string) {
+    this.store.dispatch({
+      type: BasketActions.setQuantity,
+      payload: Number.parseInt(newQuantity)
+    });
+  }
+
   removeFromBasket(basketItem: BasketItem) {
     this.store.dispatch({
       type: BasketActions.remove,
